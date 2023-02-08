@@ -131,36 +131,30 @@ export default function Navbar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <Link to='/about' style={{ textDecoration: 'inherit' }}>
+        <Link to='/about' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>About</Typography>
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to='/skills' style={{ textDecoration: 'inherit' }}>
+        <Link to='/skills' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>Skills</Typography>
         </Link>
       </MenuItem>
       <MenuItem>
         <Link
           to='/experience'
-          style={{ color: 'inherit', textDecoration: 'inherit' }}
+          style={{ color: 'black', textDecoration: 'none' }}
         >
           <Typography>Experience</Typography>
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link
-          to='/projects'
-          style={{ color: 'inherit', textDecoration: 'inherit' }}
-        >
+        <Link to='/projects' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>Projects</Typography>
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link
-          to='/contact'
-          style={{ color: 'inherit', textDecoration: 'inherit' }}
-        >
+        <Link to='/contact' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>Contact</Typography>
         </Link>
       </MenuItem>
@@ -200,14 +194,17 @@ export default function Navbar() {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <MenuItem>
-              <Link to='/about' color='inherit'>
+              <Link
+                to='/about'
+                style={{ color: 'inherit', textDecoration: 'none' }}
+              >
                 <Typography>About</Typography>
               </Link>
             </MenuItem>
             <MenuItem>
               <Link
                 to='/skills'
-                style={{ color: 'inherit', textDecoration: 'inherit' }}
+                style={{ color: 'inherit', textDecoration: 'none' }}
               >
                 <Typography>Skills</Typography>
               </Link>
@@ -215,7 +212,7 @@ export default function Navbar() {
             <MenuItem>
               <Link
                 to='/experience'
-                style={{ color: 'inherit', textDecoration: 'inherit' }}
+                style={{ color: 'inherit', textDecoration: 'none' }}
               >
                 <Typography>Experience</Typography>
               </Link>
@@ -223,7 +220,7 @@ export default function Navbar() {
             <MenuItem>
               <Link
                 to='/projects'
-                style={{ color: 'inherit', textDecoration: 'inherit' }}
+                style={{ color: 'inherit', textDecoration: 'none' }}
               >
                 <Typography>Projects</Typography>
               </Link>
@@ -231,7 +228,7 @@ export default function Navbar() {
             <MenuItem>
               <Link
                 to='/contact'
-                style={{ color: 'inherit', textDecoration: 'inherit' }}
+                style={{ color: 'inherit', textDecoration: 'none' }}
               >
                 <Typography>Contact</Typography>
               </Link>
