@@ -21,16 +21,31 @@ function HeroSection() {
           width: '60%',
         }}
       >
-        <Grid container spacing={2}>
-          <Grid item xs={4} sx={{ width: '600px' }}>
-            <Typography className='hero-h2' variant='h2'>
+        <Grid
+          container
+          spacing={2}
+          alignItems='center'
+          justifyContent='center'
+          style={{ minWidth: '85vw', minHeight: '60vh' }}
+        >
+          <Grid className='a1' item xs={4} sx={{ width: '600px' }}>
+            <Typography
+              className='hero-p'
+              variant='p'
+              sx={{ lineHeight: 1, m: 1 }}
+            >
               He
+              <br />
             </Typography>
-            <Typography className='hero-h2' variant='h2'>
+            <Typography
+              className='hero-p'
+              variant='p'
+              sx={{ lineHeight: 1, m: 1 }}
+            >
               llo,
             </Typography>
           </Grid>
-          <Grid item xs={8}>
+          <Grid className='a2' item xs={8}>
             <Typography className='hero-h3' variant='h3'>
               i’m ulas temel.
             </Typography>
