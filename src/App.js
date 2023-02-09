@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 const theme = createTheme({
   palette: {
@@ -32,6 +33,7 @@ const theme = createTheme({
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Router>
         <Navbar />
         <Routes>

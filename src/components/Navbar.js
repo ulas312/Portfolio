@@ -10,6 +10,7 @@ import {
   IconButton,
   Typography,
   Badge,
+  Button,
   MenuItem,
   Menu,
 } from '@mui/material';
@@ -164,7 +165,7 @@ export default function Navbar() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar
-        position='static'
+        position='absolute'
         style={{ background: 'transparent', boxShadow: 'none' }}
       >
         <Toolbar>
@@ -182,6 +183,7 @@ export default function Navbar() {
             <Box
               component='img'
               sx={{
+                ml: 1,
                 mt: 2,
                 height: 90,
                 width: 200,
@@ -194,44 +196,49 @@ export default function Navbar() {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <MenuItem>
-              <Link
+              <Button
+                style={{ color: 'primary', textDecoration: 'none' }}
                 to='/about'
-                style={{ color: 'inherit', textDecoration: 'none' }}
+                component={Link}
               >
-                <Typography>About</Typography>
-              </Link>
+                About
+              </Button>
             </MenuItem>
             <MenuItem>
-              <Link
+              <Button
+                style={{ color: 'primary', textDecoration: 'none' }}
                 to='/skills'
-                style={{ color: 'inherit', textDecoration: 'none' }}
+                component={Link}
               >
-                <Typography>Skills</Typography>
-              </Link>
+                Skills
+              </Button>
             </MenuItem>
             <MenuItem>
-              <Link
+              <Button
+                style={{ color: 'primary', textDecoration: 'none' }}
                 to='/experience'
-                style={{ color: 'inherit', textDecoration: 'none' }}
+                component={Link}
               >
-                <Typography>Experience</Typography>
-              </Link>
+                Experience
+              </Button>
             </MenuItem>
             <MenuItem>
-              <Link
+              <Button
+                style={{ color: 'primary', textDecoration: 'none' }}
                 to='/projects'
-                style={{ color: 'inherit', textDecoration: 'none' }}
+                component={Link}
               >
-                <Typography>Projects</Typography>
-              </Link>
+                Projects
+              </Button>
             </MenuItem>
             <MenuItem>
-              <Link
+              <Button
+                style={{ color: 'primary', textDecoration: 'none' }}
                 to='/contact'
-                style={{ color: 'inherit', textDecoration: 'none' }}
+                component={Link}
               >
-                <Typography>Contact</Typography>
-              </Link>
+                Contact
+              </Button>
             </MenuItem>
             {/* <IconButton
               size='large'
