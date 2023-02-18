@@ -14,10 +14,6 @@ import {
   MenuItem,
   Menu,
 } from '@mui/material';
-import ExploreIcon from '@mui/icons-material/Explore';
-import MailIcon from '@mui/icons-material/Mail';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import AddAPhotoIcon from '@mui/icons-material/AddAPhoto';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
 export default function Navbar() {
@@ -62,55 +58,52 @@ export default function Navbar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <>
-        <MenuItem onClick={handleMenuClose}>
-          <Link
-            style={{ color: 'inherit', textDecoration: 'inherit' }}
-            to='/profile '
+      <MenuItem onClick={handleMenuClose}>
+        <Link
+          style={{ color: 'inherit', textDecoration: 'inherit' }}
+          to='/profile '
+        >
+          <Typography
+            variant='h6'
+            color='inherit'
+            component='div'
+            sx={{ mr: 2 }}
           >
-            <Typography
-              variant='h6'
-              color='inherit'
-              component='div'
-              sx={{ mr: 2 }}
-            >
-              Profile
-            </Typography>
-          </Link>
-        </MenuItem>
-      </>
-      <>
-        <MenuItem onClick={handleMenuClose}>
-          <Link
-            style={{ color: 'inherit', textDecoration: 'inherit' }}
-            to='/login'
+            Profile
+          </Typography>
+        </Link>
+      </MenuItem>
+
+      <MenuItem onClick={handleMenuClose}>
+        <Link
+          style={{ color: 'inherit', textDecoration: 'inherit' }}
+          to='/login'
+        >
+          <Typography
+            variant='h6'
+            color='inherit'
+            component='div'
+            sx={{ mr: 2 }}
           >
-            <Typography
-              variant='h6'
-              color='inherit'
-              component='div'
-              sx={{ mr: 2 }}
-            >
-              Login
-            </Typography>
-          </Link>
-        </MenuItem>
-        <MenuItem onClick={handleMenuClose}>
-          <Link
-            style={{ color: 'inherit', textDecoration: 'inherit' }}
-            to='/register'
+            Login
+          </Typography>
+        </Link>
+      </MenuItem>
+      <MenuItem onClick={handleMenuClose}>
+        <Link
+          style={{ color: 'inherit', textDecoration: 'inherit' }}
+          to='/register'
+        >
+          <Typography
+            variant='h6'
+            color='inherit'
+            component='div'
+            sx={{ mr: 2 }}
           >
-            <Typography
-              variant='h6'
-              color='inherit'
-              component='div'
-              sx={{ mr: 2 }}
-            >
-              Register
-            </Typography>
-          </Link>
-        </MenuItem>
-      </>
+            Register
+          </Typography>
+        </Link>
+      </MenuItem>
     </Menu>
   );
 
@@ -197,7 +190,11 @@ export default function Navbar() {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <MenuItem>
               <Button
-                style={{ color: 'primary', textDecoration: 'none' }}
+                style={{
+                  color: 'primary',
+                  textDecoration: 'none',
+                  fontSize: 25,
+                }}
                 to='/about'
                 component={Link}
               >
@@ -206,7 +203,11 @@ export default function Navbar() {
             </MenuItem>
             <MenuItem>
               <Button
-                style={{ color: 'primary', textDecoration: 'none' }}
+                style={{
+                  color: 'primary',
+                  textDecoration: 'none',
+                  fontSize: 25,
+                }}
                 to='/skills'
                 component={Link}
               >
@@ -215,7 +216,11 @@ export default function Navbar() {
             </MenuItem>
             <MenuItem>
               <Button
-                style={{ color: 'primary', textDecoration: 'none' }}
+                style={{
+                  color: 'primary',
+                  textDecoration: 'none',
+                  fontSize: 25,
+                }}
                 to='/experience'
                 component={Link}
               >
@@ -224,7 +229,11 @@ export default function Navbar() {
             </MenuItem>
             <MenuItem>
               <Button
-                style={{ color: 'primary', textDecoration: 'none' }}
+                style={{
+                  color: 'primary',
+                  textDecoration: 'none',
+                  fontSize: 25,
+                }}
                 to='/projects'
                 component={Link}
               >
@@ -233,7 +242,11 @@ export default function Navbar() {
             </MenuItem>
             <MenuItem>
               <Button
-                style={{ color: 'primary', textDecoration: 'none' }}
+                style={{
+                  color: 'primary',
+                  textDecoration: 'none',
+                  fontSize: 25,
+                }}
                 to='/contact'
                 component={Link}
               >

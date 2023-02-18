@@ -2,8 +2,10 @@ import * as React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar';
+import Home from './components/Home';
 import HeroSection from './components/HeroSection';
 import Skills from './components/Skills';
+import About from './components/About';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -39,6 +41,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<HeroSection />} />
+          <Route path='/home' element={<Home />} />
+
+          <Route path='/about' element={<About />} />
           <Route path='/skills' element={<Skills />} />
         </Routes>
       </Router>
