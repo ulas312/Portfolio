@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/Projects.scss';
 import BGImage from '../assets/projects-background.png';
+import fbiIcon from '../assets/fbi-icon.svg';
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -15,17 +16,18 @@ import {
   CardContent,
   CardMedia,
   Button,
-  Paper,
+  styled,
   MobileStepper,
   Box,
   Typography,
-  Divider,
+  List,
   Stack,
   IconButton,
   createTheme,
   ThemeProvider,
   Avatar,
 } from '@mui/material';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 const contentStyle = {
   height: '640px',
@@ -54,6 +56,18 @@ theme.typography.p = {
     fontSize: '23px',
   },
 };
+
+const BootstrapTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} arrow classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.arrow}`]: {
+    color: theme.palette.secondary.main,
+  },
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: 'theme.palette.secondary',
+    fontSize: theme.typography.pxToRem(40),
+  },
+}));
 
 export default class Projects extends Component {
   render() {
@@ -150,6 +164,17 @@ export default class Projects extends Component {
                                 Snkr Closet
                               </Typography>
                               <Typography
+                                gutterBottom
+                                className='card-text'
+                                variant='h5'
+                                color='text.secondary'
+                                // sx={{ fontSize: 20 }}
+                              >
+                                Solo - 7 day time frame. The day the project
+                                started our baby girl was born, due to this I
+                                only had 5 days to finish before the deadline.
+                              </Typography>
+                              <Typography
                                 className='card-text'
                                 variant='p'
                                 color='text.secondary'
@@ -167,22 +192,76 @@ export default class Projects extends Component {
                           </CardContent>
                           <CardActions style={{ justifyContent: 'center' }}>
                             <Button
-                              sx={{ fontSize: 25 }}
+                              sx={{ fontSize: 25, mr: 6 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://snker-closet-frontend.netlify.app/'
                             >
-                              Link
+                              view project
                             </Button>
                             <Button
                               sx={{ fontSize: 25 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://github.com/ulas312/ga-project-4-client'
                             >
                               Repo
                             </Button>
                           </CardActions>
+                          <List component={Stack} direction='row'>
+                            <BootstrapTooltip title='react'>
+                              <Button>
+                                <i
+                                  class='devicon-react-original colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='SASS'>
+                              <Button>
+                                <i
+                                  class='devicon-sass-original colored'
+                                  style={{ fontSize: '110px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='express'>
+                              <Button>
+                                <i
+                                  class='devicon-express-original colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='nodejs'>
+                              <Button>
+                                <i
+                                  class='devicon-nodejs-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='mongodb'>
+                              <Button>
+                                <i
+                                  class='devicon-mongodb-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='material ui'>
+                              <Button>
+                                <i
+                                  class='devicon-materialui-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                          </List>
                         </Grid>
                       </Card>
                     </Grid>
@@ -238,6 +317,7 @@ export default class Projects extends Component {
                                 Full Stacked
                               </Typography>
                               <Typography
+                                gutterBottom
                                 className='card-text'
                                 variant='h5'
                                 color='text.secondary'
@@ -273,22 +353,68 @@ export default class Projects extends Component {
                           </CardContent>
                           <CardActions style={{ justifyContent: 'center' }}>
                             <Button
-                              sx={{ fontSize: 25 }}
+                              sx={{ fontSize: 25, mr: 6 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://fullstacked-frontend.netlify.app/'
                             >
-                              Link
+                              view project
                             </Button>
                             <Button
                               sx={{ fontSize: 25 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://github.com/ulas312/ga-project-3-frontend'
                             >
                               Repo
                             </Button>
                           </CardActions>
+                          <List component={Stack} direction='row'>
+                            <BootstrapTooltip title='react'>
+                              <Button>
+                                <i
+                                  class='devicon-react-original colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='SASS'>
+                              <Button>
+                                <i
+                                  class='devicon-sass-original colored'
+                                  style={{ fontSize: '110px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='django'>
+                              <Button>
+                                <i
+                                  class='devicon-django-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='postgresql'>
+                              <Button>
+                                <i
+                                  class='devicon-postgresql-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='material ui'>
+                              <Button>
+                                <i
+                                  class='devicon-materialui-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                          </List>
                         </Grid>
                       </Card>
                     </Grid>
@@ -344,39 +470,89 @@ export default class Projects extends Component {
                                 FBI Most Wanted
                               </Typography>
                               <Typography
+                                gutterBottom
+                                className='card-text'
+                                variant='h5'
+                                color='text.secondary'
+                                // sx={{ fontSize: 20 }}
+                              >
+                                Team of 2 - completed over 2 days.
+                              </Typography>
+                              <Typography
                                 className='card-text'
                                 variant='p'
                                 color='text.secondary'
                                 // sx={{ fontSize: 20 }}
                               >
                                 The brief for this project was to build a
-                                full-stack application by making our own backend
-                                using Python Django REST Framework to serve our
-                                data from a Postgres database with
-                                authentication and a React frontend to consume
-                                the API data. I chose to create an instagram
-                                like app for sneaker collectors.
+                                full-stack application by consuming a public
+                                API, have several components and have a router.
+                                The tasks I took on were creating the
+                                navbar/footer, home page, the suspect
+                                information page that pulled in the information
+                                from the FBI API we used. I also created mock
+                                templates of the app with Adobe Illustrator to
+                                have images to work off.
                               </Typography>
                             </ThemeProvider>
                           </CardContent>
                           <CardActions style={{ justifyContent: 'center' }}>
                             <Button
-                              sx={{ fontSize: 25 }}
+                              sx={{ fontSize: 25, mr: 6 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://fbi-mostwanted.netlify.app/'
                             >
-                              Link
+                              view project
                             </Button>
                             <Button
                               sx={{ fontSize: 25 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://github.com/ulas312/ga-project-2'
                             >
                               Repo
                             </Button>
                           </CardActions>
+                          <List component={Stack} direction='row'>
+                            <BootstrapTooltip title='react'>
+                              <Button>
+                                <i
+                                  class='devicon-react-original colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='SASS'>
+                              <Button>
+                                <i
+                                  class='devicon-sass-original colored'
+                                  style={{ fontSize: '110px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='FBI API'>
+                              <Button>
+                                <img
+                                  src={fbiIcon}
+                                  alt='api icon'
+                                  style={{ width: '80px' }}
+                                />
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='bulma'>
+                              <Button>
+                                <i
+                                  class='devicon-bulma-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                          </List>
                         </Grid>
                       </Card>
                     </Grid>
@@ -432,6 +608,15 @@ export default class Projects extends Component {
                                 Space Invaders
                               </Typography>
                               <Typography
+                                gutterBottom
+                                className='card-text'
+                                variant='h5'
+                                color='text.secondary'
+                                // sx={{ fontSize: 20 }}
+                              >
+                                Solo - completed over 7 days.
+                              </Typography>
+                              <Typography
                                 className='card-text'
                                 variant='p'
                                 color='text.secondary'
@@ -449,22 +634,52 @@ export default class Projects extends Component {
                           </CardContent>
                           <CardActions style={{ justifyContent: 'center' }}>
                             <Button
-                              sx={{ fontSize: 25 }}
+                              sx={{ fontSize: 25, mr: 6 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://ulas312.github.io/ga-project-1/'
                             >
-                              Link
+                              view project
                             </Button>
                             <Button
                               sx={{ fontSize: 25 }}
+                              target='_blank'
                               color='secondary'
                               variant='contained'
                               size='large'
+                              href='https://github.com/ulas312/ga-project-1'
                             >
                               Repo
                             </Button>
                           </CardActions>
+                          <List component={Stack} direction='row'>
+                            <BootstrapTooltip title='HTML'>
+                              <Button>
+                                <i
+                                  class='devicon-html5-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='CSS'>
+                              <Button>
+                                <i
+                                  class='devicon-css3-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                            <BootstrapTooltip title='JavaScript'>
+                              <Button>
+                                <i
+                                  class='devicon-javascript-plain colored'
+                                  style={{ fontSize: '80px' }}
+                                ></i>
+                              </Button>
+                            </BootstrapTooltip>
+                          </List>
                         </Grid>
                       </Card>
                     </Grid>
