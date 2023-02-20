@@ -37,7 +37,7 @@ function HeroSection() {
           justifyContent='center'
           style={{ minWidth: '85vw' }}
         >
-          <Grid className='a1' item xs={4} sx={{ width: '500px' }}>
+          <Grid item xs={4} sx={{ width: '500px' }}>
             <Typography
               className='hero-p'
               variant='p'
@@ -54,7 +54,7 @@ function HeroSection() {
               llo,
             </Typography>
           </Grid>
-          <Grid className='a2' item xs={8} sx={{ width: '600px' }}>
+          <Grid item xs={8} sx={{ width: '600px' }}>
             <Typography
               className='hero-h3'
               variant='h3'

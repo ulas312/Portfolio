@@ -6,6 +6,9 @@ import Home from './components/Home';
 import HeroSection from './components/HeroSection';
 import Skills from './components/Skills';
 import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -42,9 +45,11 @@ function App() {
         <Routes>
           <Route path='/' element={<HeroSection />} />
           <Route path='/home' element={<Home />} />
-
           <Route path='/about' element={<About />} />
           <Route path='/skills' element={<Skills />} />
+          <Route path='/experience' element={<Experience />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
       </Router>
     </ThemeProvider>
