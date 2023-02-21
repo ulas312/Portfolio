@@ -15,7 +15,7 @@ function HeroSection() {
         sx={{
           flexGrow: 1,
           position: 'absolute',
-          top: '15vh',
+          top: '9vh',
           justify: 'center',
           left: '8.5%',
           pt: 2,
@@ -62,17 +62,14 @@ function HeroSection() {
             >
               Im Ulas Temel
             </Typography>
-
             <TypeAnimation
               className='hero-animation'
-              // Same String at the start will only be typed once, initially
               sequence={['a FULL-STACK DEVELOPER.', 2000]}
-              speed={40} // Custom Speed from 1-99 - Default Speed: 40
+              speed={40}
               style={{ fontSize: '90pt' }}
-              wrapper='h1' // Animation will be rendered as a <span>
-              repeat={Infinity} // Repeat this Animation Sequence infinitely
+              wrapper='h1'
+              repeat={Infinity}
             />
-
             <Typography
               className='hero-h3'
               variant='h3'

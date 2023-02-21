@@ -7,7 +7,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { Carousel, Col, Row, Image } from 'antd';
+import { Image } from 'antd';
 
 import {
   Grid,
@@ -17,21 +17,17 @@ import {
   CardMedia,
   Button,
   styled,
-  MobileStepper,
   Box,
   Typography,
   List,
   Stack,
-  IconButton,
   createTheme,
   ThemeProvider,
-  Avatar,
 } from '@mui/material';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
 const contentStyle = {
   height: '640px',
-  // color: '#fff',
   textAlign: 'center',
 };
 
@@ -103,7 +99,6 @@ export default class Projects extends Component {
               projects
             </Typography>
             <Box
-              // className='a1'
               alignItems='center'
               justifyContent='center'
               style={{ width: '90vw' }}
@@ -124,11 +119,8 @@ export default class Projects extends Component {
                             sx={{
                               display: 'flex',
                               justifyContent: 'center',
-                              // height: 'auto',
-                              // width: 250,
                               mx: 3,
                               my: 2,
-                              // mb: 1,
                               // maxHeight: { xs: 233, md: 167 },
                               // maxWidth: { xs: 350, md: 250 },
                             }}
@@ -159,7 +151,6 @@ export default class Projects extends Component {
                                 variant='h3'
                                 component='div'
                                 color='text.secondary'
-                                // sx={{ fontSize: 35 }}
                               >
                                 Snkr Closet
                               </Typography>
@@ -168,7 +159,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='h5'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 Solo - 7 day time frame. The day the project
                                 started our baby girl was born, due to this I
@@ -178,7 +168,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='p'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 The brief for this project was to build a
                                 full-stack application by making our own backend
@@ -277,11 +266,8 @@ export default class Projects extends Component {
                             sx={{
                               display: 'flex',
                               justifyContent: 'center',
-                              // height: 'auto',
-                              // width: 250,
                               mx: 3,
                               my: 2,
-                              // mb: 1,
                               // maxHeight: { xs: 233, md: 167 },
                               // maxWidth: { xs: 350, md: 250 },
                             }}
@@ -312,7 +298,6 @@ export default class Projects extends Component {
                                 variant='h3'
                                 component='div'
                                 color='text.secondary'
-                                // sx={{ fontSize: 35 }}
                               >
                                 Full Stacked
                               </Typography>
@@ -321,7 +306,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='h5'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 Team of 3 - completed over 7 days.
                               </Typography>
@@ -330,7 +314,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='p'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 The brief for this project was to build a
                                 full-stack application by using React and making
@@ -430,11 +413,8 @@ export default class Projects extends Component {
                             sx={{
                               display: 'flex',
                               justifyContent: 'center',
-                              // height: 'auto',
-                              // width: 250,
                               mx: 3,
                               my: 2,
-                              // mb: 1,
                               // maxHeight: { xs: 233, md: 167 },
                               // maxWidth: { xs: 350, md: 250 },
                             }}
@@ -465,7 +445,6 @@ export default class Projects extends Component {
                                 variant='h3'
                                 component='div'
                                 color='text.secondary'
-                                // sx={{ fontSize: 35 }}
                               >
                                 FBI Most Wanted
                               </Typography>
@@ -474,7 +453,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='h5'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 Team of 2 - completed over 2 days.
                               </Typography>
@@ -482,7 +460,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='p'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 The brief for this project was to build a
                                 full-stack application by consuming a public
@@ -568,11 +545,8 @@ export default class Projects extends Component {
                             sx={{
                               display: 'flex',
                               justifyContent: 'center',
-                              // height: 'auto',
-                              // width: 250,
                               mx: 3,
                               my: 2,
-                              // mb: 1,
                               // maxHeight: { xs: 233, md: 167 },
                               // maxWidth: { xs: 350, md: 250 },
                             }}
@@ -603,7 +577,6 @@ export default class Projects extends Component {
                                 variant='h3'
                                 component='div'
                                 color='text.secondary'
-                                // sx={{ fontSize: 35 }}
                               >
                                 Space Invaders
                               </Typography>
@@ -612,7 +585,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='h5'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 Solo - completed over 7 days.
                               </Typography>
@@ -620,7 +592,6 @@ export default class Projects extends Component {
                                 className='card-text'
                                 variant='p'
                                 color='text.secondary'
-                                // sx={{ fontSize: 20 }}
                               >
                                 The brief for this project was to build a
                                 full-stack application by making our own backend

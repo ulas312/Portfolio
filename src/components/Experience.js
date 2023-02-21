@@ -8,20 +8,11 @@ import PrintLogo from '../assets/312-logo.png';
 import {
   Grid,
   Card,
-  CardActions,
   CardContent,
   CardMedia,
-  Button,
-  Paper,
   ListItem,
   Box,
   Typography,
-  styled,
-  Stack,
-  IconButton,
-  createTheme,
-  ThemeProvider,
-  Avatar,
 } from '@mui/material';
 
 function Experience() {
@@ -48,7 +39,6 @@ function Experience() {
           experience
         </Typography>
         <Box
-          // classNam='a1'
           alignItems='center'
           justifyContent='center'
           style={{ width: '90vw' }}
@@ -61,11 +51,9 @@ function Experience() {
           <Grid sx={{ flexGrow: 1 }}>
             <Grid
               item
-              // xs={12}
               container
               spacing={{ xs: 2, md: 3 }}
               columns={{ xs: 4, sm: 8, md: 12 }}
-              // className='a1'
             >
               <Grid container justifyContent='center'>
                 <Card sx={{ height: 690, width: 500, mr: 4 }}>

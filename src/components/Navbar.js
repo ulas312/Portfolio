@@ -9,12 +9,11 @@ import {
   Toolbar,
   IconButton,
   Typography,
-  Badge,
   Button,
   MenuItem,
   Menu,
 } from '@mui/material';
-import MoreIcon from '@mui/icons-material/MoreVert';
+import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Navbar() {
   const navigate = useNavigate();
@@ -125,6 +124,9 @@ export default function Navbar() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
+        <Link to='/' style={{ color: 'black', textDecoration: 'none' }}>
+          <Typography>Home</Typography>
+        </Link>
         <Link to='/about' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>About</Typography>
         </Link>
@@ -162,16 +164,6 @@ export default function Navbar() {
         style={{ background: 'transparent', boxShadow: 'none' }}
       >
         <Toolbar>
-          {/* <IconButton
-            size='large'
-            edge='start'
-            color='inherit'
-            aria-label='open drawer'
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton> */}
-
           <Link to='/'>
             <Box
               component='img'
@@ -188,6 +180,19 @@ export default function Navbar() {
 
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <MenuItem>
+              <Button
+                style={{
+                  color: 'primary',
+                  textDecoration: 'none',
+                  fontSize: 25,
+                }}
+                to='/'
+                component={Link}
+              >
+                Home
+              </Button>
+            </MenuItem>
             <MenuItem>
               <Button
                 style={{
@@ -253,15 +258,6 @@ export default function Navbar() {
                 Contact
               </Button>
             </MenuItem>
-            {/* <IconButton
-              size='large'
-              edge='end'
-              aria-label='account of current user'
-              aria-controls={menuId}
-              aria-haspopup='true'
-              onClick={handleProfileMenuOpen}
-              color='inherit'
-            ></IconButton> */}
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -272,7 +268,7 @@ export default function Navbar() {
               onClick={handleMobileMenuOpen}
               color='inherit'
             >
-              <MoreIcon />
+              <MenuIcon color='primary' />
             </IconButton>
           </Box>
         </Toolbar>

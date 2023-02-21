@@ -12,17 +12,11 @@ import {
   Grid,
   List,
   ListItem,
-  Paper,
-  ListItemText,
   Button,
   Box,
   Typography,
   styled,
   Stack,
-  IconButton,
-  createTheme,
-  ThemeProvider,
-  Avatar,
 } from '@mui/material';
 import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
@@ -69,7 +63,6 @@ function Skills() {
             position: 'absolute',
             height: '70vh',
             top: '22vh',
-            // ml: '95px',
           }}
         >
           <Grid container spacing={2}>

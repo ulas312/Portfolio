@@ -43,8 +43,9 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          {/* <Route path='/' element={<Home />} /> */}
           <Route path='/' element={<HeroSection />} />
-          <Route path='/home' element={<Home />} />
+          {/* <Route path='/home' element={<Home />} /> */}
           <Route path='/about' element={<About />} />
           <Route path='/skills' element={<Skills />} />
           <Route path='/experience' element={<Experience />} />

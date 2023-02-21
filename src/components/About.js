@@ -5,7 +5,6 @@ import {
   Box,
   Typography,
   styled,
-  Paper,
   createTheme,
   ThemeProvider,
   Avatar,
@@ -18,7 +17,6 @@ import ProfilePic from '../assets/profile-pic.png';
 
 const Item = styled(Box)(({ theme }) => ({
   ...theme.typography.body2,
-  // textAlign: 'center',
   color: theme.palette.secondary.main,
 }));
 
