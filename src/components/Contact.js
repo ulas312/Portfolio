@@ -23,6 +23,9 @@ function Contact() {
       <Box
         alignItems='center'
         justifyContent='center'
+        item
+        xs={12}
+        sm={6}
         style={{ width: '90vw' }}
         sx={{
           position: 'absolute',
@@ -89,7 +92,7 @@ function Contact() {
                             color='text.primary'
                             sx={{ fontSize: 30, textAlign: 'center' }}
                           >
-                            github.com/ulas312
+                            temel.ulas@googlemail.com
                           </Typography>
                         </CardContent>
                         <CardMedia

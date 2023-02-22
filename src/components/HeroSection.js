@@ -3,7 +3,7 @@ import React from 'react';
 import Image from '../assets/hero.png';
 import '../styles/Hero.scss';
 
-import { TypeAnimation } from 'react-type-animation';
+// import { TypeAnimation } from 'react-type-animation';
 
 import { Grid, Button, Box, Typography } from '@mui/material';
 
@@ -13,21 +13,11 @@ function HeroSection() {
       <img className='hero-image' src={Image} alt='background pattern' />
       <Box
         sx={{
+          display: 'flex',
           flexGrow: 1,
           position: 'absolute',
-          top: '9vh',
-          justify: 'center',
-          left: '8.5%',
-          pt: 2,
-          pb: 2,
-          // width: '60%',
-          // width: {
-          //   xs: 100,
-          //   sm: 200,
-          //   md: 300,
-          //   lg: 400,
-          //   xl: 500,
-          // },
+          top: '20vh',
+          left: '9%',
         }}
       >
         <Grid
@@ -35,56 +25,139 @@ function HeroSection() {
           spacing={2}
           alignItems='center'
           justifyContent='center'
-          style={{ minWidth: '85vw' }}
+          marginRight={2}
         >
-          <Grid item xs={4} sx={{ width: '500px' }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={1}
+            sx={{
+              marginRight: {
+                xl: '20rem',
+                lg: '15rem',
+                md: '14rem',
+                // sm: '0rem',
+              },
+              lineHeight: 1,
+              display: 'flex',
+              flexDirection: 'column',
+              maxWidth: '50vw',
+            }}
+            display='flex'
+          >
             <Typography
-              className='hero-p'
               variant='p'
-              sx={{ lineHeight: 1, m: 1 }}
+              sx={{
+                lineHeight: 1,
+                maxWidth: '25vw',
+                fontSize: {
+                  xl: '20rem',
+                  lg: '15rem',
+                  md: '14rem',
+                  sm: '15rem',
+                  xs: '10rem',
+                },
+                textAlign: 'left',
+              }}
             >
               He
               <br />
             </Typography>
             <Typography
-              className='hero-p'
               variant='p'
-              sx={{ lineHeight: 1, m: 1 }}
+              sx={{
+                lineHeight: 1,
+                maxWidth: '25vw',
+                fontSize: {
+                  xl: '20rem',
+                  lg: '15rem',
+                  md: '14rem',
+                  sm: '15rem',
+                  xs: '10rem',
+                },
+                textAlign: 'left',
+              }}
             >
               llo,
             </Typography>
           </Grid>
-          <Grid item xs={8} sx={{ width: '600px' }}>
+
+          <Grid item xs={12} sm={6} md={8}>
             <Typography
-              className='hero-h3'
               variant='h3'
-              style={{ fontSize: '60pt' }}
+              sx={{
+                fontSize: {
+                  lg: '3.5rem',
+                  md: '2.5rem',
+                  sm: '2rem',
+                  xs: '2rem',
+                },
+              }}
             >
               Im Ulas Temel
             </Typography>
-            <TypeAnimation
+            {/* <TypeAnimation
               className='hero-animation'
               sequence={['a FULL-STACK DEVELOPER.', 2000]}
               speed={40}
-              style={{ fontSize: '90pt' }}
+              // style={{ fontSize: '6rem' }}
               wrapper='h1'
               repeat={Infinity}
-            />
+            /> */}
             <Typography
-              className='hero-h3'
               variant='h3'
-              style={{ fontSize: '60pt' }}
+              sx={{
+                fontSize: {
+                  lg: '6rem',
+                  md: '5rem',
+                  sm: '4.3rem',
+                  xs: '2.3rem',
+                },
+              }}
             >
-              nice to meet you.
+              a FULL-STACK DEVELOPER.
             </Typography>
             <Typography
               className='hero-h3'
               variant='h3'
-              style={{ fontSize: '60pt' }}
+              sx={{
+                fontSize: {
+                  lg: '4rem',
+                  md: '2.5rem',
+                  sm: '3.2rem',
+                  xs: '1.7rem',
+                },
+              }}
             >
-              Please take a look around!
+              nice to meet you. Please take a
             </Typography>
-            <Typography className='hero-h4' variant='h4'>
+            <Typography
+              variant='h3'
+              sx={{
+                fontSize: {
+                  lg: '4rem',
+                  md: '2.5rem',
+                  sm: '3.2rem',
+                  xs: '1.7rem',
+                },
+              }}
+            >
+              look around!
+            </Typography>
+            <Typography
+              className='hero-h4'
+              variant='h4'
+              sx={{
+                fontSize: {
+                  xl: '2.1rem',
+                  lg: '1.6rem',
+                  md: '1.5rem',
+                  sm: '1.2rem',
+                  xs: '1rem',
+                },
+              }}
+            >
               I am passionate about building excellent software that improves
               the lives of those around me.
             </Typography>

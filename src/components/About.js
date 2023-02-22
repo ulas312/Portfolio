@@ -90,13 +90,18 @@ function About() {
                 mt: 10,
               }}
             >
-              <Item>
-                <Avatar
-                  alt='Ulas Temel'
-                  src={ProfilePic}
-                  sx={{ width: '100%', height: 'auto' }}
-                />
-              </Item>
+              <Box>
+                <Item>
+                  <Avatar
+                    alt='Ulas Temel'
+                    src={ProfilePic}
+                    sx={{
+                      width: '100%',
+                      height: 'auto',
+                    }}
+                  />
+                </Item>
+              </Box>
             </Grid>
             <Grid item xs={6} md={8}>
               <Item>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Logo from '../assets/logo.png';
 
@@ -16,95 +16,18 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function Navbar() {
-  const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
   };
 
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{
-        vertical: 'top',
-        horizontal: 'right',
-      }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>
-        <Link
-          style={{ color: 'inherit', textDecoration: 'inherit' }}
-          to='/profile '
-        >
-          <Typography
-            variant='h6'
-            color='inherit'
-            component='div'
-            sx={{ mr: 2 }}
-          >
-            Profile
-          </Typography>
-        </Link>
-      </MenuItem>
-
-      <MenuItem onClick={handleMenuClose}>
-        <Link
-          style={{ color: 'inherit', textDecoration: 'inherit' }}
-          to='/login'
-        >
-          <Typography
-            variant='h6'
-            color='inherit'
-            component='div'
-            sx={{ mr: 2 }}
-          >
-            Login
-          </Typography>
-        </Link>
-      </MenuItem>
-      <MenuItem onClick={handleMenuClose}>
-        <Link
-          style={{ color: 'inherit', textDecoration: 'inherit' }}
-          to='/register'
-        >
-          <Typography
-            variant='h6'
-            color='inherit'
-            component='div'
-            sx={{ mr: 2 }}
-          >
-            Register
-          </Typography>
-        </Link>
-      </MenuItem>
-    </Menu>
-  );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
@@ -127,15 +50,20 @@ export default function Navbar() {
         <Link to='/' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>Home</Typography>
         </Link>
+      </MenuItem>
+
+      <MenuItem>
         <Link to='/about' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>About</Typography>
         </Link>
       </MenuItem>
+
       <MenuItem>
         <Link to='/skills' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>Skills</Typography>
         </Link>
       </MenuItem>
+
       <MenuItem>
         <Link
           to='/experience'
@@ -144,11 +72,13 @@ export default function Navbar() {
           <Typography>Experience</Typography>
         </Link>
       </MenuItem>
+
       <MenuItem>
         <Link to='/projects' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>Projects</Typography>
         </Link>
       </MenuItem>
+
       <MenuItem>
         <Link to='/contact' style={{ color: 'black', textDecoration: 'none' }}>
           <Typography>Contact</Typography>
@@ -193,6 +123,7 @@ export default function Navbar() {
                 Home
               </Button>
             </MenuItem>
+
             <MenuItem>
               <Button
                 style={{
@@ -206,6 +137,7 @@ export default function Navbar() {
                 About
               </Button>
             </MenuItem>
+
             <MenuItem>
               <Button
                 style={{
@@ -268,13 +200,12 @@ export default function Navbar() {
               onClick={handleMobileMenuOpen}
               color='inherit'
             >
-              <MenuIcon color='primary' />
+              <MenuIcon color='primary' sx={{ fontSize: 40 }} />
             </IconButton>
           </Box>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
-      {renderMenu}
     </Box>
   );
 }

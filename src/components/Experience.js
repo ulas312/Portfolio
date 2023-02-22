@@ -23,6 +23,8 @@ function Experience() {
         style={{
           position: 'absolute',
           left: '5%',
+          paddingTop: 20,
+          paddingBottom: 0,
         }}
       >
         <Typography
@@ -42,11 +44,12 @@ function Experience() {
           alignItems='center'
           justifyContent='center'
           style={{ width: '90vw' }}
-          sx={{
-            position: 'absolute',
-            height: '70vh',
-            top: '25vh',
-          }}
+          sx={{ pt: 30 }}
+          // sx={{
+          //   position: 'absolute',
+          //   height: '70vh',
+          //   top: '25vh',
+          // }}
         >
           <Grid sx={{ flexGrow: 1 }}>
             <Grid
@@ -62,8 +65,8 @@ function Experience() {
                       display: 'flex',
                       justifyContent: 'center',
                       height: 'auto',
-                      width: 250,
-                      mx: 15,
+                      width: 180,
+                      mx: 19,
                       mt: 2,
                       mb: 1,
                       // maxHeight: { xs: 233, md: 167 },
@@ -119,8 +122,8 @@ function Experience() {
                       display: 'flex',
                       justifyContent: 'center',
                       height: 'auto',
-                      width: 300,
-                      mx: 12,
+                      width: 220,
+                      mx: 16,
                       mt: 2,
                       mb: 1,
                       // maxHeight: { xs: 233, md: 167 },
@@ -185,8 +188,8 @@ function Experience() {
                       display: 'flex',
                       justifyContent: 'center',
                       height: 'auto',
-                      width: 250,
-                      mx: 15,
+                      width: 210,
+                      mx: 19,
                       mt: 2,
                       mb: 1,
                       // maxHeight: { xs: 233, md: 167 },

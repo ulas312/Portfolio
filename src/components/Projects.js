@@ -593,13 +593,12 @@ export default class Projects extends Component {
                                 variant='p'
                                 color='text.secondary'
                               >
-                                The brief for this project was to build a
-                                full-stack application by making our own backend
-                                using Python Django REST Framework to serve our
-                                data from a Postgres database with
-                                authentication and a React frontend to consume
-                                the API data. I chose to create an instagram
-                                like app for sneaker collectors.
+                                The brief for this project was to build an in
+                                browser game which included separate files for
+                                HTML / CSS / JavaScript and to use JavaScript to
+                                manipulate the DOM. I chose to rebuild a
+                                grid-based version of my favourite arcade
+                                classic game, Space Invaders.
                               </Typography>
                             </ThemeProvider>
                           </CardContent>
