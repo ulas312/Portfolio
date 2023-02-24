@@ -100,8 +100,20 @@ export default function Navbar() {
               sx={{
                 ml: 1,
                 mt: 2,
-                height: 90,
-                width: 200,
+                height: {
+                  xl: '5.625rem',
+                  lg: '5.3rem',
+                  md: '5rem',
+                  sm: '4rem',
+                  xs: '3rem',
+                },
+                width: {
+                  xl: '16rem',
+                  lg: '15rem',
+                  md: '14rem',
+                  sm: '10rem',
+                  xs: '7.5 rem',
+                },
               }}
               alt='logo.'
               src={Logo}

@@ -34,17 +34,41 @@ function Experience() {
           sx={{
             position: 'absolute',
             top: '10vh',
-            left: '35vw',
+            left: '40vw',
             justify: 'center',
+            fontSize: '4rem',
           }}
         >
           experience
         </Typography>
         <Box
+          // className='a2'
           alignItems='center'
           justifyContent='center'
           style={{ width: '90vw' }}
-          sx={{ pt: 30 }}
+          sx={{
+            pt: {
+              xl: '12rem',
+              lg: '12rem',
+              md: '15rem',
+              sm: '13rem',
+              xs: '11rem',
+            },
+            px: {
+              xl: '2rem',
+              lg: '2rem',
+              md: '2rem',
+              sm: '2rem',
+              xs: '2rem',
+            },
+            pb: {
+              xl: '2rem',
+              lg: '2rem',
+              md: '2rem',
+              sm: '2rem',
+              xs: '2rem',
+            },
+          }}
           // sx={{
           //   position: 'absolute',
           //   height: '70vh',
@@ -56,21 +80,45 @@ function Experience() {
               item
               container
               spacing={{ xs: 2, md: 3 }}
-              columns={{ xs: 4, sm: 8, md: 12 }}
+              // columns={{ xs: 4, sm: 8, md: 12, lg: 1 }}
             >
               <Grid container justifyContent='center'>
-                <Card sx={{ height: 690, width: 500, mr: 4 }}>
+                <Card
+                  sx={{
+                    height: 690,
+                    width: {
+                      xl: '28.125rem',
+                      lg: '26rem',
+                      md: '28.125rem',
+                      sm: '28.125rem',
+                      xs: '31.25rem',
+                    },
+                    mr: 2,
+                    ml: 2,
+                    mb: 2,
+                  }}
+                >
                   <CardMedia
                     sx={{
                       display: 'flex',
                       justifyContent: 'center',
                       height: 'auto',
-                      width: 180,
-                      mx: 19,
+                      width: {
+                        xl: '10.25rem',
+                        lg: '10.25rem',
+                        md: '10.25rem',
+                        sm: '10.25rem',
+                        xs: '8rem',
+                      },
+                      mx: {
+                        xl: 16,
+                        lg: 16,
+                        md: 17,
+                        sm: 16,
+                        xs: 9,
+                      },
                       mt: 2,
                       mb: 1,
-                      // maxHeight: { xs: 233, md: 167 },
-                      // maxWidth: { xs: 350, md: 250 },
                     }}
                     component='img'
                     alt='General Assembly logo'
@@ -105,29 +153,65 @@ function Experience() {
                       className='experience-text'
                       variant='p'
                       color='text.secondary'
+                      gutterBottom
                     >
-                      Throughout the 12 week intensive course and the 450+ hours
-                      of homework, I learnt the fundamentals of full stack
-                      development and covered multiple modules that ended up
-                      with a project at the end to test and demonstrate my
-                      knowledge. These projects varied from individual to pair
-                      programming.
+                      Throughout the 12-week intensive course and the 450+ hours
+                      of homework, I covered multiple modules on full stack
+                      development and ended up with a project at the end to test
+                      and demonstrate my knowledge.
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Developed full-stack applications using React, MongoDB,
+                        Express, Node.js, Python/Django, and PostgreSQL.
+                      </ListItem>
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Honed skills in JavaScript, HTML, and CSS.
+                      </ListItem>
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Successfully delivered solo, pair, and group projects
+                        within deadlines by following agile development
+                        practices and participating in daily stand-ups working
+                        remotely over Zoom and Slack.
+                      </ListItem>
                     </Typography>
                   </CardContent>
                 </Card>
 
-                <Card sx={{ height: 690, width: 500, mx: 4 }}>
+                <Card
+                  sx={{
+                    height: 690,
+                    width: {
+                      xl: '28.125rem',
+                      lg: '26rem',
+                      md: '28.125rem',
+                      sm: '28.125rem',
+                      xs: '31.25rem',
+                    },
+                    mx: 2,
+                    ml: 2,
+                    mb: 2,
+                  }}
+                >
                   <CardMedia
                     sx={{
                       display: 'flex',
                       justifyContent: 'center',
                       height: 'auto',
-                      width: 220,
-                      mx: 16,
+                      width: {
+                        xl: '11.25rem',
+                        lg: '11.25rem',
+                        md: '11.25rem',
+                        sm: '11.25rem',
+                        xs: '9rem',
+                      },
+                      mx: {
+                        xl: 16,
+                        lg: 16,
+                        md: 17,
+                        sm: 16,
+                        xs: 9,
+                      },
                       mt: 2,
                       mb: 1,
-                      // maxHeight: { xs: 233, md: 167 },
-                      // maxWidth: { xs: 350, md: 250 },
                     }}
                     component='img'
                     alt='Zezes logo'
@@ -175,25 +259,51 @@ function Experience() {
                         50%.
                       </ListItem>
                       <ListItem sx={{ display: 'list-item' }}>
-                        Ensuring an effective communication strategy was in
-                        place.
+                        Ensured effective communication channels were in place
+                        by collaborating with customers and team members to
+                        address inquiries, coordinate schedules, and maintain
+                        customer satisfaction.
                       </ListItem>
                     </Typography>
                   </CardContent>
                 </Card>
 
-                <Card sx={{ height: 690, width: 500, ml: 4 }}>
+                <Card
+                  sx={{
+                    height: 690,
+                    width: {
+                      xl: '28.125rem',
+                      lg: '26rem',
+                      md: '28.125rem',
+                      sm: '28.125rem',
+                      xs: '31.25rem',
+                    },
+                    mr: 2,
+                    ml: 2,
+                    mb: 2,
+                  }}
+                >
                   <CardMedia
                     sx={{
                       display: 'flex',
                       justifyContent: 'center',
                       height: 'auto',
-                      width: 210,
-                      mx: 19,
+                      width: {
+                        xl: '11.25rem',
+                        lg: '11.25rem',
+                        md: '11.25rem',
+                        sm: '11.25rem',
+                        xs: '9rem',
+                      },
+                      mx: {
+                        xl: 16,
+                        lg: 16,
+                        md: 17,
+                        sm: 16,
+                        xs: 9,
+                      },
                       mt: 2,
                       mb: 1,
-                      // maxHeight: { xs: 233, md: 167 },
-                      // maxWidth: { xs: 350, md: 250 },
                     }}
                     component='img'
                     alt='312 logo'

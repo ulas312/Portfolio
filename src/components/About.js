@@ -56,57 +56,121 @@ function About() {
   return (
     <Grid container component='main'>
       <img className='hero-image' src={Image} alt='background pattern' />
-      <Typography
-        className='about-text'
-        variant='h1'
-        align='center'
-        sx={{
-          position: 'absolute',
-          top: '10vh',
-          left: '40vw',
-          justify: 'center',
-        }}
-      >
-        About me
-      </Typography>
       <Box
         sx={{
+          display: 'flex',
+          flexGrow: 1,
           position: 'absolute',
-          width: '100vw',
-          height: '70vh',
-          top: '22vh',
-          pt: 5,
+          top: {
+            xl: '16vh',
+            lg: '15vh',
+            md: '11vh',
+            sm: '12vh',
+            xs: '12vh',
+          },
+          // left: '9%',
+          width: '100%',
+          // px: 1,
+          px: theme.spacing(2),
+
+          // minHeight: '100vh',
+          // height: '80vh',
           backgroundColor: 'primary.light',
+          pt: theme.spacing(2),
+          pb: theme.spacing(2),
         }}
       >
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2}>
+          <Grid container>
             <Grid
               item
-              xs={6}
-              md={3}
+              xs={12}
+              md={4}
               sx={{
                 position: 'flex',
-                mt: 10,
+                display: 'flex',
+                justifyContent: 'center',
               }}
             >
-              <Box>
-                <Item>
+              <Box
+                Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: {
+                    xl: 'left',
+                    lg: 'left',
+                    md: 'left',
+                    sm: 'left',
+                    xs: 'left',
+                  },
+                  alignItems: 'center',
+                }}
+              >
+                <Item
+                  sx={{
+                    display: 'flex',
+                    justifyContent: {
+                      xl: 'left',
+                      lg: 'left',
+                      md: 'left',
+                      sm: 'center',
+                      xs: 'center',
+                    },
+                  }}
+                >
                   <Avatar
                     alt='Ulas Temel'
                     src={ProfilePic}
                     sx={{
-                      width: '100%',
+                      width: {
+                        xl: '80%',
+                        lg: '90%',
+                        md: '90%',
+                        sm: '45%',
+                        xs: '40%',
+                      },
                       height: 'auto',
                     }}
                   />
                 </Item>
               </Box>
             </Grid>
-            <Grid item xs={6} md={8}>
+
+            <Grid item xs={12} md={8}>
               <Item>
                 <ThemeProvider theme={theme}>
-                  <Typography className='about-text' variant='h2' align='left'>
+                  <Typography
+                    className='about-text'
+                    variant='h2'
+                    align='left'
+                    // textAlign='center'
+                    sx={{
+                      fontSize: {
+                        xl: '2rem',
+                        lg: '1.8rem',
+                        md: '2rem',
+                        sm: '2rem',
+                        xs: '1.2rem',
+                      },
+                    }}
+                  >
+                    About Me:
+                  </Typography>
+                  <Typography
+                    className='about-text'
+                    variant='h2'
+                    align='left'
+                    // textAlign='center'
+                    sx={{
+                      fontSize: {
+                        xl: '1.51rem',
+                        lg: '1.22rem',
+                        md: '1.5rem',
+                        sm: '1.5rem',
+                        xs: '0.75rem',
+                      },
+                    }}
+                  >
                     I'm a Junior Software Engineer with a passion for web design
                     and programming developed from an early age. I bring a
                     diverse skill set sharpened through building interactive
@@ -121,19 +185,46 @@ function About() {
                     ultimate goal is to become a highly skilled software
                     engineer and make a meaningful impact in the industry.
                   </Typography>
-                  <Typography
+                  {/* <Typography
                     className='about-text'
                     variant='h2'
                     align='center'
                     sx={{ pt: 1 }}
                   >
                     <u>INTERESTS:</u>
+                  </Typography> */}
+                  <Typography
+                    className='about-text'
+                    variant='h2'
+                    align='left'
+                    // textAlign='center'
+                    sx={{
+                      pt: 1,
+                      fontSize: {
+                        xl: '2rem',
+                        lg: '1.8rem',
+                        md: '2rem',
+                        sm: '2rem',
+                        xs: '1.2rem',
+                      },
+                    }}
+                  >
+                    Interests:
                   </Typography>
                   <Typography
                     className='about-text'
                     variant='h3'
                     align='left'
-                    sx={{ pt: 2 }}
+                    sx={{
+                      // pt: 2,
+                      fontSize: {
+                        xl: '1.51rem',
+                        lg: '1.22rem',
+                        md: '1.5rem',
+                        sm: '1.5rem',
+                        xs: '0.75rem',
+                      },
+                    }}
                   >
                     <u>Gym/training/cycling:</u> Most of my life I've been
                     active, played basketball at a national level, lifting
@@ -141,12 +232,38 @@ function About() {
                     myself fit and functional which is key with having young
                     kids.
                   </Typography>
-                  <Typography className='about-text' variant='h3' align='left'>
+                  <Typography
+                    className='about-text'
+                    variant='h3'
+                    align='left'
+                    sx={{
+                      fontSize: {
+                        xl: '1.51rem',
+                        lg: '1.22rem',
+                        md: '1.5rem',
+                        sm: '1.5rem',
+                        xs: '0.75rem',
+                      },
+                    }}
+                  >
                     <u>Scuba diving:</u> Since getting my scuba diving
                     certificates I've been trying to get out and dive in every
                     country I have been to.
                   </Typography>
-                  <Typography className='about-text' variant='h3' align='left'>
+                  <Typography
+                    className='about-text'
+                    variant='h3'
+                    align='left'
+                    sx={{
+                      fontSize: {
+                        xl: '1.51rem',
+                        lg: '1.22rem',
+                        md: '1.5rem',
+                        sm: '1.5rem',
+                        xs: '0.75rem',
+                      },
+                    }}
+                  >
                     <u>Cars and boats:</u> Have always had a keen interest in
                     cars, mainly classic and recently managed to get one of my
                     favourite cars, a Datsun 280z just needs a lot of work. Also
@@ -157,7 +274,15 @@ function About() {
                   <Button
                     href='/contact'
                     color='secondary'
-                    style={{ fontSize: '30pt' }}
+                    sx={{
+                      fontSize: {
+                        xl: '30pt',
+                        lg: '27pt',
+                        md: '30pt',
+                        sm: '30pt',
+                        xs: '19pt',
+                      },
+                    }}
                   >
                     <u>Get in touch</u>
                     <ArrowForwardIcon sx={{ fontSize: 40 }} />

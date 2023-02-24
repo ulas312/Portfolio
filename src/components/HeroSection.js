@@ -56,7 +56,7 @@ function HeroSection() {
                   lg: '15rem',
                   md: '14rem',
                   sm: '15rem',
-                  xs: '10rem',
+                  xs: '10.5rem',
                 },
                 textAlign: 'left',
               }}
@@ -74,7 +74,7 @@ function HeroSection() {
                   lg: '15rem',
                   md: '14rem',
                   sm: '15rem',
-                  xs: '10rem',
+                  xs: '10.5rem',
                 },
                 textAlign: 'left',
               }}
@@ -91,7 +91,7 @@ function HeroSection() {
                   lg: '3.5rem',
                   md: '2.5rem',
                   sm: '2rem',
-                  xs: '2rem',
+                  xs: '2.3rem',
                 },
               }}
             >
@@ -112,7 +112,7 @@ function HeroSection() {
                   lg: '6rem',
                   md: '5rem',
                   sm: '4.3rem',
-                  xs: '2.3rem',
+                  xs: '2.45rem',
                 },
               }}
             >
@@ -126,7 +126,7 @@ function HeroSection() {
                   lg: '4rem',
                   md: '2.5rem',
                   sm: '3.2rem',
-                  xs: '1.7rem',
+                  xs: '1.9rem',
                 },
               }}
             >
@@ -139,7 +139,7 @@ function HeroSection() {
                   lg: '4rem',
                   md: '2.5rem',
                   sm: '3.2rem',
-                  xs: '1.7rem',
+                  xs: '1.9rem',
                 },
               }}
             >
@@ -154,7 +154,7 @@ function HeroSection() {
                   lg: '1.6rem',
                   md: '1.5rem',
                   sm: '1.2rem',
-                  xs: '1rem',
+                  xs: '1.2rem',
                 },
               }}
             >

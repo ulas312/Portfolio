@@ -5,6 +5,9 @@ import RestAPIIcon from '../assets/rest-api.svg';
 import SqlIcon from '../assets/sql.svg';
 import ShopifyIcon from '../assets/shopify.svg';
 import GoogleIcon from '../assets/google-analytics.svg';
+import HTMLIcon from '../assets/html.svg';
+import CSSIcon from '../assets/css-icon.svg';
+import SASSIcon from '../assets/sass-icon.svg';
 
 import '../styles/Skills.scss';
 
@@ -42,19 +45,45 @@ function Skills() {
           left: '5%',
         }}
       >
-        <Typography
-          className='about-text'
-          variant='h1'
-          align='center'
+        <Box
           sx={{
             position: 'absolute',
             top: '10vh',
-            left: '39vw',
+            left: {
+              xl: '33rem',
+              lg: '17rem',
+              md: '10rem',
+              sm: '4rem',
+              xs: '-6rem',
+            },
             justify: 'center',
           }}
         >
-          Skills
-        </Typography>
+          <Typography
+            className='about-text'
+            variant='h1'
+            align='center'
+            sx={{
+              fontSize: {
+                xl: '5rem',
+                lg: '5rem',
+                md: '5rem',
+                sm: '5rem',
+                xs: '3rem',
+              },
+            }}
+          >
+            Skills
+          </Typography>
+          <Typography
+            sx={{ width: '600px' }}
+            className='about-text'
+            variant='h5'
+            align='center'
+          >
+            Hover over the icons for names
+          </Typography>
+        </Box>
         <Box
           alignItems='center'
           justifyContent='center'
@@ -67,131 +96,314 @@ function Skills() {
         >
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Typography sx={{ mt: 4, mb: 2 }} variant='h3' component='div'>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
+                  },
+                }}
+                variant='h3'
+                component='div'
+              >
                 Frontend:
               </Typography>
 
               <List component={Stack} direction='row'>
                 <BootstrapTooltip title='HTML'>
-                  <Button>
-                    <i
-                      class='devicon-html5-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={HTMLIcon}
+                    alt='HTML icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
+
                 <BootstrapTooltip title='CSS'>
-                  <Button>
-                    <i
-                      class='devicon-css3-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={CSSIcon}
+                    alt='CSS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
+
                 <BootstrapTooltip title='SASS'>
-                  <Button>
-                    <i
-                      class='devicon-sass-original'
-                      style={{ fontSize: '110px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='JavaScript'>
-                  <Button>
-                    <i
-                      class='devicon-javascript-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='react'>
-                  <Button>
-                    <i
-                      class='devicon-react-original'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='material ui'>
-                  <Button>
-                    <i
-                      class='devicon-materialui-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='bulma'>
-                  <Button>
-                    <i
-                      class='devicon-bulma-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
               </List>
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <Typography sx={{ mt: 4, mb: 2 }} variant='h3' component='div'>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
+                  },
+                }}
+                variant='h3'
+                component='div'
+              >
                 Backend:
               </Typography>
               <List component={Stack} direction='row'>
                 <BootstrapTooltip title='nodejs'>
-                  <Button>
-                    <i
-                      class='devicon-nodejs-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='mongodb'>
-                  <Button>
-                    <i
-                      class='devicon-mongodb-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='express'>
-                  <Button>
-                    <i
-                      class='devicon-express-original'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='python'>
-                  <Button>
-                    <i
-                      class='devicon-python-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='django'>
-                  <Button>
-                    <i
-                      class='devicon-django-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='sql'>
-                  <Button>
-                    <img
-                      src={SqlIcon}
-                      alt='api icon'
-                      style={{ width: '100px' }}
-                    />
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
                 <BootstrapTooltip title='postgresql'>
-                  <Button>
-                    <i
-                      class='devicon-postgresql-plain'
-                      style={{ fontSize: '100px' }}
-                    ></i>
-                  </Button>
+                  <Box
+                    component='img'
+                    src={SASSIcon}
+                    alt='SASS icon'
+                    sx={{
+                      width: {
+                        xl: '6rem',
+                        lg: '3.5rem',
+                        md: '6rem',
+                        sm: '6rem',
+                        xs: '6rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
                 </BootstrapTooltip>
               </List>
             </Grid>
@@ -199,150 +411,370 @@ function Skills() {
 
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
-              <Typography sx={{ mt: 4, mb: 2 }} variant='h3' component='div'>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
+                  },
+                }}
+                variant='h3'
+                component='div'
+              >
                 Other:
               </Typography>
               <List component={Stack} direction='row'>
                 <ListItem>
                   <BootstrapTooltip title='git'>
-                    <Button>
-                      <i
-                        class='devicon-git-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='github'>
-                    <Button>
-                      <i
-                        class='devicon-github-original'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='api'>
-                    <Button>
-                      <img
-                        src={apiIcon}
-                        alt='api icon'
-                        style={{ width: '100px' }}
-                      />
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='restful api'>
-                    <Button>
-                      <img
-                        src={RestAPIIcon}
-                        alt='api icon'
-                        style={{ width: '100px' }}
-                      />
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='vscode'>
-                    <Button>
-                      <i
-                        class='devicon-vscode-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='shopify'>
-                    <Button>
-                      <img
-                        src={ShopifyIcon}
-                        alt='api icon'
-                        style={{ width: '100px' }}
-                      />
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='wordpress'>
-                    <Button>
-                      <i
-                        class='devicon-wordpress-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                 </ListItem>
               </List>
             </Grid>
 
             <Grid item xs={12} md={6}>
-              <Typography sx={{ mt: 4, mb: 2 }} variant='h3' component='div'>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
+                  },
+                }}
+                variant='h3'
+                component='div'
+              >
                 Design & Marketing:
               </Typography>
               <List component={Stack} direction='row'>
                 <ListItem>
                   <BootstrapTooltip title='figma'>
-                    <Button>
-                      <i
-                        class='devicon-figma-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='illustrator'>
-                    <Button>
-                      <i
-                        class='devicon-illustrator-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='photoshop'>
-                    <Button>
-                      <i
-                        class='devicon-photoshop-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='xd'>
-                    <Button>
-                      <i
-                        class='devicon-xd-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='canva'>
-                    <Button>
-                      <i
-                        class='devicon-canva-original'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='trello'>
-                    <Button>
-                      <i
-                        class='devicon-trello-plain'
-                        style={{ fontSize: '100px' }}
-                      ></i>
-                    </Button>
+                    <Box
+                      component='img'
+                      src={SASSIcon}
+                      alt='SASS icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                   <BootstrapTooltip title='google analytics '>
-                    <Button>
-                      <img
-                        src={GoogleIcon}
-                        alt='api icon'
-                        style={{ width: '100px' }}
-                      />
-                    </Button>
+                    <Box
+                      component='img'
+                      src={GoogleIcon}
+                      alt='Google icon'
+                      sx={{
+                        width: {
+                          xl: '6rem',
+                          lg: '3.5rem',
+                          md: '6rem',
+                          sm: '6rem',
+                          xs: '6rem',
+                        },
+                        mx: 1,
+                        mt: 2,
+                        mb: 0.5,
+                      }}
+                    />
                   </BootstrapTooltip>
                 </ListItem>
               </List>
             </Grid>
 
             <Grid item xs={12} md={12}>
-              <Typography sx={{ mt: 4, mb: 2 }} variant='h5' component='div'>
-                <u>Currently learning:</u> TypeScript.
+              <Typography
+                sx={{
+                  // mt: 1,
+                  mb: 1,
+                  fontSize: {
+                    xl: '2.2rem',
+                    lg: '2rem',
+                    md: '2.2rem',
+                    sm: '2.2rem',
+                    xs: '2.2rem',
+                  },
+                }}
+                variant='h5'
+                component='div'
+              >
+                <u>Currently learning: TypeScript.</u>
               </Typography>
-              <Typography sx={{ mt: 4, mb: 2 }} variant='h5' component='div'>
+              <Typography
+                sx={{
+                  mt: 1,
+                  mb: 1,
+                  fontSize: {
+                    xl: '2.2rem',
+                    lg: '2rem',
+                    md: '2.2rem',
+                    sm: '2.2rem',
+                    xs: '2.2rem',
+                  },
+                }}
+                variant='h5'
+                component='div'
+              >
                 <u>Business skills:</u> Startup, business operations, marketing,
                 team management, customer experience.
               </Typography>
-              <Typography sx={{ mt: 4, mb: 2 }} variant='h5' component='div'>
+              <Typography
+                sx={{
+                  mt: 1,
+                  mb: 1,
+                  fontSize: {
+                    xl: '2.2rem',
+                    lg: '2rem',
+                    md: '2.2rem',
+                    sm: '2.2rem',
+                    xs: '2.2rem',
+                  },
+                }}
+                variant='h5'
+                component='div'
+              >
                 <u>Languages:</u> Bilingual, fluent in English as well as
                 Turkish.
               </Typography>

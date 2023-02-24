@@ -1,228 +1,315 @@
 import React from 'react';
+import '../styles/Experience.scss';
+import Image from '../assets/experience-background.png';
+import GaLogo from '../assets/ga-logo.png';
+import ZezesLogo from '../assets/zezes-logo.png';
+import PrintLogo from '../assets/312-logo.png';
+
 import {
   Grid,
-  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  ListItem,
   Box,
   Typography,
-  styled,
-  createTheme,
-  ThemeProvider,
-  Avatar,
 } from '@mui/material';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-
-import '../styles/About.scss';
-import Image from '../assets/about-background.png';
-import ProfilePic from '../assets/profile-pic.png';
-
-const Item = styled(Box)(({ theme }) => ({
-  ...theme.typography.body2,
-  color: theme.palette.secondary.main,
-}));
-
-const theme = createTheme();
-
-theme.typography.h1 = {
-  fontSize: '40px',
-  '@media (min-width:600px)': {
-    fontSize: '50px',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '87px',
-  },
-};
-
-theme.typography.h2 = {
-  fontSize: '20px',
-  '@media (min-width:600px)': {
-    fontSize: '22px',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '25px',
-  },
-};
-
-theme.typography.h3 = {
-  fontSize: '18px',
-  '@media (min-width:600px)': {
-    fontSize: '20px',
-  },
-  [theme.breakpoints.up('md')]: {
-    fontSize: '23px',
-  },
-};
+import { Stack } from '@mui/system';
 
 function Home() {
   return (
     <Grid container component='main'>
       <img className='hero-image' src={Image} alt='background pattern' />
-      <Box
-        sx={{
-          display: 'flex',
-          flexGrow: 1,
+      {/* <div
+        style={{
           position: 'absolute',
-          top: '16vh',
-          // left: '9%',
-          width: '100%',
-          // minHeight: '100vh',
-          // height: '70vh',
-          backgroundColor: 'primary.light',
-          pt: theme.spacing(2),
-          pb: theme.spacing(2),
+          left: '5%',
+          paddingTop: 20,
+          paddingBottom: 0,
+        }}
+      > */}
+      <Typography
+        className='about-text'
+        variant='h1'
+        align='center'
+        sx={{
+          position: 'absolute',
+          // top: '10vh',
+          pt: '10vh',
+          pl: {
+            xl: '50rem',
+            lg: '32.5rem',
+            md: '25rem',
+            sm: '15rem',
+            xs: '8rem',
+          },
+          justify: 'center',
+          fontSize: {
+            xl: '4rem',
+            lg: '4rem',
+            md: '4rem',
+            sm: '4rem',
+            xs: '3rem',
+          },
         }}
       >
-        <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={2}>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              sx={{
-                position: 'flex',
-                display: 'flex',
-                justifyContent: 'center',
-              }}
-            >
-              <Box
-                Box
-                sx={{
-                  display: 'flex',
-                  justifyContent: {
-                    xl: 'left',
-                    lg: 'left',
-                    md: 'left',
-                    sm: 'left',
-                    xs: 'center',
+        experience
+      </Typography>
+      <Box
+        className='a2'
+        alignItems='center'
+        justifyContent='center'
+        style={{ width: '90vw' }}
+        sx={{
+          pt: {
+            xl: '12rem',
+            lg: '12rem',
+            md: '15rem',
+            sm: '13rem',
+            xs: '11rem',
+          },
+          px: {
+            xl: '2rem',
+            lg: '2rem',
+            md: '2rem',
+            sm: '2rem',
+            xs: '2rem',
+          },
+          pb: {
+            xl: '2rem',
+            lg: '2rem',
+            md: '2rem',
+            sm: '2rem',
+            xs: '2rem',
+          },
+        }}
+      >
+        <Grid sx={{ flexGrow: 1 }} className='a1'>
+          <Grid
+            className='a3'
+            item
+            container
+            spacing={{ xs: 2, md: 3 }}
+            columns={{ xs: 4, sm: 8, md: 12 }}
+          >
+            <Grid container justifyContent='center'>
+              <Stack
+                className='a2'
+                direction={{
+                  xs: {
+                    xl: 'row',
+                    lg: 'row',
+                    md: 'row',
+                    sm: 'column',
+                    xs: 'column',
                   },
-                  alignItems: 'center',
+                }}
+                spacing={{
+                  xs: {
+                    xl: '4',
+                    lg: '4',
+                    md: '2',
+                    sm: '1',
+                    xs: '1',
+                  },
                 }}
               >
-                <Item
-                  sx={{
-                    display: 'flex',
-                    justifyContent: {
-                      xl: 'left',
-                      lg: 'left',
-                      md: 'left',
-                      sm: 'left',
-                      xs: 'center',
-                    },
-                  }}
-                >
-                  <Avatar
-                    alt='Ulas Temel'
-                    src={ProfilePic}
+                {/* <Card sx={{ height: 690, width: 500, mr: 4 }}>
+                  <CardMedia
                     sx={{
-                      width: {
-                        xl: '80%',
-                        lg: '80%',
-                        md: '200%',
-                        sm: '30%',
-                        xs: '50%',
-                      },
+                      display: 'flex',
+                      justifyContent: 'center',
                       height: 'auto',
+                      width: 180,
+                      mx: 19,
+                      mt: 2,
+                      mb: 1,
+                      // maxHeight: { xs: 233, md: 167 },
+                      // maxWidth: { xs: 350, md: 250 },
                     }}
+                    component='img'
+                    alt='General Assembly logo'
+                    image={GaLogo}
                   />
-                </Item>
-              </Box>
-            </Grid>
+                  <CardContent>
+                    <Typography
+                      variant='h3'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 35 }}
+                    >
+                      <u>General Assembly</u>
+                    </Typography>
+                    <Typography
+                      variant='h4'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 30 }}
+                    >
+                      Software Engineering Immersive.
+                    </Typography>
+                    <Typography
+                      variant='h4'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 26 }}
+                    >
+                      Oct 2022 - Jan 2023 - London, Remote.
+                    </Typography>
+                    <Typography
+                      className='experience-text'
+                      variant='p'
+                      color='text.secondary'
+                    >
+                      Throughout the 12 week intensive course and the 450+ hours
+                      of homework, I learnt the fundamentals of full stack
+                      development and covered multiple modules that ended up
+                      with a project at the end to test and demonstrate my
+                      knowledge. These projects varied from individual to pair
+                      programming.
+                    </Typography>
+                  </CardContent>
+                </Card> */}
 
-            <Grid item xs={12} md={8}>
-              <Item>
-                <ThemeProvider theme={theme}>
-                  <Typography
-                    className='about-text'
-                    variant='h2'
-                    align='left'
-                    // textAlign='center'
+                {/* <Card sx={{ height: 690, width: 500, mx: 4 }}>
+                  <CardMedia
                     sx={{
-                      fontSize: {
-                        xl: '2rem',
-                        lg: '1rem',
-                        md: '2rem',
-                        sm: '2rem',
-                        xs: '1rem',
-                      },
+                      display: 'flex',
+                      justifyContent: 'center',
+                      height: 'auto',
+                      width: 220,
+                      mx: 16,
+                      mt: 2,
+                      mb: 1,
+                      // maxHeight: { xs: 233, md: 167 },
+                      // maxWidth: { xs: 350, md: 250 },
                     }}
-                  >
-                    About Me:
-                  </Typography>
-                  <Typography
-                    className='about-text'
-                    variant='h2'
-                    align='left'
-                    // textAlign='center'
+                    component='img'
+                    alt='Zezes logo'
+                    image={ZezesLogo}
+                  />
+                  <CardContent>
+                    <Typography
+                      variant='h3'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 35 }}
+                    >
+                      <u>Zeze's Mediterranean</u>
+                    </Typography>
+                    <Typography
+                      variant='h4'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 30 }}
+                    >
+                      Co-founder & Head of Marketing.
+                    </Typography>
+                    <Typography
+                      variant='h4'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 26 }}
+                    >
+                      May 2020 - Oct 2022 - Swanage, Dorset.
+                    </Typography>
+                    <Typography
+                      className='experience-text'
+                      variant='p'
+                      color='text.secondary'
+                    >
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Designing, building and maintaining the business website
+                        that was mobile and tablet responsive which had
+                        consistent visitor growth over the duration of the
+                        business.
+                      </ListItem>
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Promoting the business through various online and
+                        offline channels which increased overall bookings by
+                        50%.
+                      </ListItem>
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Ensuring an effective communication strategy was in
+                        place.
+                      </ListItem>
+                    </Typography>
+                  </CardContent>
+                </Card> */}
+
+                {/* <Card sx={{ height: 690, width: 500, ml: 4 }}>
+                  <CardMedia
                     sx={{
-                      fontSize: {
-                        xl: '1.5rem',
-                        lg: '1rem',
-                        md: '2rem',
-                        sm: '2rem',
-                        xs: '1rem',
-                      },
+                      display: 'flex',
+                      justifyContent: 'center',
+                      height: 'auto',
+                      width: 210,
+                      mx: 19,
+                      mt: 2,
+                      mb: 1,
+                      // maxHeight: { xs: 233, md: 167 },
+                      // maxWidth: { xs: 350, md: 250 },
                     }}
-                  >
-                    I'm a Junior Software Engineer with a passion for web design
-                    and programming developed from an early age. I bring a
-                    diverse skill set sharpened through building interactive
-                    games and designing and managing websites for family and
-                    friends. My experience in technical operations and project
-                    management, gained through running a successful print
-                    business (now inactive), has prepared me well for a career
-                    in software engineering. After completing a software
-                    engineering course at General Assembly, I am eager to join a
-                    talented team where I can continue to learn, grow, and apply
-                    my skills to develop innovative software solutions. My
-                    ultimate goal is to become a highly skilled software
-                    engineer and make a meaningful impact in the industry.
-                  </Typography>
-                  <Typography
-                    className='about-text'
-                    variant='h2'
-                    align='center'
-                    sx={{ pt: 1 }}
-                  >
-                    <u>INTERESTS:</u>
-                  </Typography>
-                  <Typography
-                    className='about-text'
-                    variant='h3'
-                    align='left'
-                    sx={{ pt: 2 }}
-                  >
-                    <u>Gym/training/cycling:</u> Most of my life I've been
-                    active, played basketball at a national level, lifting
-                    weights or cycling. Main interest now is trying to keep
-                    myself fit and functional which is key with having young
-                    kids.
-                  </Typography>
-                  <Typography className='about-text' variant='h3' align='left'>
-                    <u>Scuba diving:</u> Since getting my scuba diving
-                    certificates I've been trying to get out and dive in every
-                    country I have been to.
-                  </Typography>
-                  <Typography className='about-text' variant='h3' align='left'>
-                    <u>Cars and boats:</u> Have always had a keen interest in
-                    cars, mainly classic and recently managed to get one of my
-                    favourite cars, a Datsun 280z just needs a lot of work. Also
-                    enjoy taking my little speed boat out in the summer.
-                  </Typography>
-                </ThemeProvider>
-                <Box textAlign='right'>
-                  <Button
-                    href='/contact'
-                    color='secondary'
-                    style={{ fontSize: '30pt' }}
-                  >
-                    <u>Get in touch</u>
-                    <ArrowForwardIcon sx={{ fontSize: 40 }} />
-                  </Button>
-                </Box>
-              </Item>
+                    component='img'
+                    alt='312 logo'
+                    image={PrintLogo}
+                  />
+                  <CardContent>
+                    <Typography
+                      variant='h3'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 35 }}
+                    >
+                      <u>312 Studios</u>
+                    </Typography>
+                    <Typography
+                      variant='h4'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 30 }}
+                    >
+                      Co-founder & Head of Operations.
+                    </Typography>
+                    <Typography
+                      variant='h4'
+                      component='div'
+                      color='text.secondary'
+                      sx={{ fontSize: 26 }}
+                    >
+                      Jan 2018 - Feb 2020 - Poole, Dorset.
+                    </Typography>
+                    <Typography
+                      className='experience-text'
+                      variant='p'
+                      color='text.secondary'
+                    >
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Dealing directly with clients, creating design briefs
+                        from their needs making sure timeframes and deadlines
+                        were achieved.
+                      </ListItem>
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Gained hands-on experience in all aspects of graphics
+                        and design from manufacturing, large format printing,
+                        vehicle wrapping and fitting to digital marketing seo
+                        and websites.
+                      </ListItem>
+                      <ListItem sx={{ display: 'list-item' }}>
+                        Within a short amount of time I quickly learnt new
+                        programs and how to effectively use them for my needs
+                        and become competent enough to run all the printers and
+                        necessary softwares on Windows computers.
+                      </ListItem>
+                    </Typography>
+                  </CardContent>
+                </Card> */}
+              </Stack>
             </Grid>
           </Grid>
-        </Box>
+        </Grid>
       </Box>
+      {/* </div> */}
     </Grid>
   );
 }

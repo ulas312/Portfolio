@@ -1,6 +1,9 @@
 import React from 'react';
 import '../styles/Contact.scss';
 import Image from '../assets/contact-background.png';
+import EmailIcon from '../assets/email-icon.svg';
+import GitHubIcon from '../assets/github-icon.svg';
+import LinkedInIcon from '../assets/linkedin-icon.svg';
 // import Speech from '../assets/speech-bubble.png';
 import EmailForm from './common/EmailForm';
 
@@ -14,7 +17,7 @@ import {
   Typography,
   List,
 } from '@mui/material';
-import EmailIcon from '@mui/icons-material/Email';
+// import EmailIcon from '@mui/icons-material/Email';
 
 function Contact() {
   return (
@@ -30,8 +33,21 @@ function Contact() {
         sx={{
           position: 'absolute',
           height: '70vh',
-          top: '25vh',
-          left: '10%',
+          top: {
+            xl: '21vh',
+            lg: '22vh',
+            md: '14vh',
+            sm: '15vh',
+            xs: '15vh',
+          },
+          left: {
+            xl: '10%',
+            lg: '10%',
+            md: '10%',
+            sm: '10%',
+            xs: '10%',
+          },
+          // left: '10%',
         }}
       >
         <Grid sx={{ flexGrow: 1 }}>
@@ -57,32 +73,61 @@ function Contact() {
                 <EmailForm />
               </Box>
 
-              <Box sx={{ flexGrow: 1, maxWidth: 600 }}>
+              <Box
+                sx={{
+                  flexGrow: 1,
+                  maxWidth: 600,
+                  display: {
+                    xl: 'block',
+                    lg: 'block',
+                    md: 'block',
+                    sm: 'none',
+                    xs: 'none',
+                  },
+                }}
+              >
                 <Grid container spacing={2}>
                   <Grid item xs={12} md={6}>
                     <List>
                       <Card
-                        sx={{ height: 690, width: 500, ml: 4 }}
+                        sx={{
+                          width: {
+                            xl: '22rem',
+                            lg: '22rem',
+                            md: '22rem',
+                            sm: '22rem',
+                            xs: '15rem',
+                          },
+                          height: 690,
+                          // width: 500,
+                          ml: 4,
+                        }}
                         style={{ backgroundColor: 'transparent' }}
                       >
                         <CardMedia
                           sx={{
                             display: 'flex',
                             justifyContent: 'center',
-                            height: 'auto',
-                            width: 250,
-                            mx: 15,
-                            mb: 1,
-                            // maxHeight: { xs: 233, md: 167 },
-                            // maxWidth: { xs: 350, md: 250 },
                           }}
                         >
-                          <Button
-                            // textalign='center'
-                            href=''
-                            target='_blank'
-                          >
-                            <EmailIcon sx={{ fontSize: '100px' }} />
+                          <Button textalign='center' href='' target='_blank'>
+                            <Box
+                              component='img'
+                              src={EmailIcon}
+                              alt='Email icon'
+                              sx={{
+                                width: {
+                                  xl: '10rem',
+                                  lg: '10rem',
+                                  md: '10rem',
+                                  sm: '10rem',
+                                  xs: '10rem',
+                                },
+                                mx: 15,
+                                mt: 2,
+                                mb: 0.5,
+                              }}
+                            />
                           </Button>
                         </CardMedia>
                         <CardContent>
@@ -95,17 +140,11 @@ function Contact() {
                             temel.ulas@googlemail.com
                           </Typography>
                         </CardContent>
+
                         <CardMedia
                           sx={{
                             display: 'flex',
                             justifyContent: 'center',
-                            height: 'auto',
-                            width: 250,
-                            mx: 15,
-                            mt: 2,
-                            mb: 1,
-                            // maxHeight: { xs: 233, md: 167 },
-                            // maxWidth: { xs: 350, md: 250 },
                           }}
                         >
                           <Button
@@ -113,14 +152,23 @@ function Contact() {
                             href='https://github.com/ulas312'
                             target='_blank'
                           >
-                            <i
-                              class='devicon-github-original'
-                              style={{
-                                fontSize: '100px',
-                                marginRight: 50,
-                                marginLeft: 50,
+                            <Box
+                              component='img'
+                              src={GitHubIcon}
+                              alt='Github icon'
+                              sx={{
+                                width: {
+                                  xl: '10rem',
+                                  lg: '10rem',
+                                  md: '10rem',
+                                  sm: '10rem',
+                                  xs: '10rem',
+                                },
+                                mx: 15,
+                                mt: 2,
+                                mb: 0.5,
                               }}
-                            ></i>
+                            />
                           </Button>
                         </CardMedia>
                         <CardContent>
@@ -137,13 +185,6 @@ function Contact() {
                           sx={{
                             display: 'flex',
                             justifyContent: 'center',
-                            height: 'auto',
-                            width: 250,
-                            mx: 15,
-                            mt: 2,
-                            mb: 1,
-                            // maxHeight: { xs: 233, md: 167 },
-                            // maxWidth: { xs: 350, md: 250 },
                           }}
                         >
                           <Button
@@ -151,14 +192,23 @@ function Contact() {
                             href='https://www.linkedin.com/in/ulastemel/'
                             target='_blank'
                           >
-                            <i
-                              class='devicon-linkedin-plain'
-                              style={{
-                                fontSize: '100px',
-                                marginRight: 50,
-                                marginLeft: 50,
+                            <Box
+                              component='img'
+                              src={LinkedInIcon}
+                              alt='LinkedIn icon'
+                              sx={{
+                                width: {
+                                  xl: '10rem',
+                                  lg: '10rem',
+                                  md: '10rem',
+                                  sm: '10rem',
+                                  xs: '10rem',
+                                },
+                                mx: 15,
+                                mt: 1,
+                                mb: 0.5,
                               }}
-                            ></i>
+                            />
                           </Button>
                         </CardMedia>
                         <CardContent>
