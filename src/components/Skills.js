@@ -8,6 +8,26 @@ import GoogleIcon from '../assets/google-analytics.svg';
 import HTMLIcon from '../assets/html.svg';
 import CSSIcon from '../assets/css-icon.svg';
 import SASSIcon from '../assets/sass-icon.svg';
+import JSIcon from '../assets/js-icon.svg';
+import ReactIcon from '../assets/react-icon.svg';
+import MUIIcon from '../assets/mui-icon.svg';
+import BulmaIcon from '../assets/bulma-icon.svg';
+import NodeIcon from '../assets/node-icon.svg';
+import MongoIcon from '../assets/mongodb-icon.svg';
+import ExpressIcon from '../assets/express-icon.svg';
+import PythonIcon from '../assets/python-icon.svg';
+import DjangoIcon from '../assets/django-icon.svg';
+import PostgresqlIcon from '../assets/postgresql-icon.svg';
+import GitIcon from '../assets/git-icon.svg';
+import GithubIcon from '../assets/github-icon.svg';
+import VScodeIcon from '../assets/vscode-icon.svg';
+import WordpressIcon from '../assets/wordpress-icon.svg';
+import FigmaIcon from '../assets/figma-icon.svg';
+import AIIcon from '../assets/illustrator-icon.svg';
+import PSIcon from '../assets/photoshop-icon.svg';
+import XDIcon from '../assets/xd-icon.svg';
+import CanvaIcon from '../assets/canva-icon.svg';
+import TrelloIcon from '../assets/trello-icon.svg';
 
 import '../styles/Skills.scss';
 
@@ -46,15 +66,22 @@ function Skills() {
         }}
       >
         <Box
+          className='a2'
           sx={{
             position: 'absolute',
-            top: '10vh',
+            top: {
+              xl: '10vh',
+              lg: '10vh',
+              md: '9vh',
+              sm: '7vh',
+              xs: '9vh',
+            },
             left: {
-              xl: '33rem',
-              lg: '17rem',
-              md: '10rem',
-              sm: '4rem',
-              xs: '-6rem',
+              xl: '38rem',
+              lg: '26rem',
+              md: '20rem',
+              sm: '12rem',
+              xs: '1.7rem',
             },
             justify: 'center',
           }}
@@ -76,7 +103,7 @@ function Skills() {
             Skills
           </Typography>
           <Typography
-            sx={{ width: '600px' }}
+            sx={{ width: '300px' }}
             className='about-text'
             variant='h5'
             align='center'
@@ -101,11 +128,11 @@ function Skills() {
                   mt: 4,
                   mb: 2,
                   fontSize: {
-                    xl: '3rem',
+                    xl: '4rem',
                     lg: '3rem',
-                    md: '3rem',
+                    md: '2rem',
                     sm: '2rem',
-                    xs: '2rem',
+                    xs: '1.6rem',
                   },
                 }}
                 variant='h3'
@@ -113,7 +140,6 @@ function Skills() {
               >
                 Frontend:
               </Typography>
-
               <List component={Stack} direction='row'>
                 <BootstrapTooltip title='HTML'>
                   <Box
@@ -122,11 +148,11 @@ function Skills() {
                     alt='HTML icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -142,11 +168,11 @@ function Skills() {
                     alt='CSS icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -162,11 +188,11 @@ function Skills() {
                     alt='SASS icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -177,15 +203,15 @@ function Skills() {
                 <BootstrapTooltip title='JavaScript'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={JSIcon}
+                    alt='JavaScript icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -193,18 +219,18 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='react'>
+                <BootstrapTooltip title='React'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={ReactIcon}
+                    alt='React icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -215,15 +241,15 @@ function Skills() {
                 <BootstrapTooltip title='material ui'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={MUIIcon}
+                    alt='Material UI icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -231,18 +257,18 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='bulma'>
+                <BootstrapTooltip title='Bulma'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={BulmaIcon}
+                    alt='Bulma icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '5rem',
+                        lg: '3.3rem',
+                        md: '2.6rem',
+                        sm: '3.9rem',
+                        xs: '1.6rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -259,11 +285,11 @@ function Skills() {
                   mt: 4,
                   mb: 2,
                   fontSize: {
-                    xl: '3rem',
+                    xl: '4rem',
                     lg: '3rem',
-                    md: '3rem',
+                    md: '2rem',
                     sm: '2rem',
-                    xs: '2rem',
+                    xs: '1.6rem',
                   },
                 }}
                 variant='h3'
@@ -275,15 +301,15 @@ function Skills() {
                 <BootstrapTooltip title='nodejs'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={NodeIcon}
+                    alt='NodeJS icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -294,15 +320,22 @@ function Skills() {
                 <BootstrapTooltip title='mongodb'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={MongoIcon}
+                    alt='mongodb icon'
                     sx={{
-                      width: {
+                      //  // width: {
+                      //   xl: '6rem',
+                      //   lg: '3.8rem',
+                      //   md: '4rem',
+                      //   sm: '4rem',
+                      //   xs: '2rem',
+                      // },
+                      height: {
                         xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        lg: '3.8rem',
+                        md: '4rem',
+                        sm: '4.5rem',
+                        xs: '2.5rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -313,15 +346,15 @@ function Skills() {
                 <BootstrapTooltip title='express'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={ExpressIcon}
+                    alt='express icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -332,15 +365,15 @@ function Skills() {
                 <BootstrapTooltip title='python'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={PythonIcon}
+                    alt='python icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -351,15 +384,15 @@ function Skills() {
                 <BootstrapTooltip title='django'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={DjangoIcon}
+                    alt='django icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -370,15 +403,15 @@ function Skills() {
                 <BootstrapTooltip title='sql'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={SqlIcon}
+                    alt='sql icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -389,15 +422,15 @@ function Skills() {
                 <BootstrapTooltip title='postgresql'>
                   <Box
                     component='img'
-                    src={SASSIcon}
-                    alt='SASS icon'
+                    src={PostgresqlIcon}
+                    alt='postgresql icon'
                     sx={{
                       width: {
-                        xl: '6rem',
-                        lg: '3.5rem',
-                        md: '6rem',
-                        sm: '6rem',
-                        xs: '6rem',
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
                       },
                       mx: 1,
                       mt: 2,
@@ -416,11 +449,11 @@ function Skills() {
                   mt: 4,
                   mb: 2,
                   fontSize: {
-                    xl: '3rem',
+                    xl: '4rem',
                     lg: '3rem',
-                    md: '3rem',
+                    md: '2rem',
                     sm: '2rem',
-                    xs: '2rem',
+                    xs: '1.6rem',
                   },
                 }}
                 variant='h3'
@@ -429,141 +462,139 @@ function Skills() {
                 Other:
               </Typography>
               <List component={Stack} direction='row'>
-                <ListItem>
-                  <BootstrapTooltip title='git'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='github'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='api'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='restful api'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='vscode'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='shopify'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='wordpress'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                </ListItem>
+                <BootstrapTooltip title='git'>
+                  <Box
+                    component='img'
+                    src={GitIcon}
+                    alt='git icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='github'>
+                  <Box
+                    component='img'
+                    src={GithubIcon}
+                    alt='GitHub icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='api'>
+                  <Box
+                    component='img'
+                    src={apiIcon}
+                    alt='API icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='restful api'>
+                  <Box
+                    component='img'
+                    src={RestAPIIcon}
+                    alt='restful icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='vscode'>
+                  <Box
+                    component='img'
+                    src={VScodeIcon}
+                    alt='vscode icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='shopify'>
+                  <Box
+                    component='img'
+                    src={ShopifyIcon}
+                    alt='shopify icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='wordpress'>
+                  <Box
+                    component='img'
+                    src={WordpressIcon}
+                    alt='wordpress icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
               </List>
             </Grid>
 
@@ -573,11 +604,11 @@ function Skills() {
                   mt: 4,
                   mb: 2,
                   fontSize: {
-                    xl: '3rem',
+                    xl: '4rem',
                     lg: '3rem',
-                    md: '3rem',
+                    md: '2rem',
                     sm: '2rem',
-                    xs: '2rem',
+                    xs: '1.6rem',
                   },
                 }}
                 variant='h3'
@@ -586,141 +617,146 @@ function Skills() {
                 Design & Marketing:
               </Typography>
               <List component={Stack} direction='row'>
-                <ListItem>
-                  <BootstrapTooltip title='figma'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='illustrator'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='photoshop'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='xd'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='canva'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='trello'>
-                    <Box
-                      component='img'
-                      src={SASSIcon}
-                      alt='SASS icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                  <BootstrapTooltip title='google analytics '>
-                    <Box
-                      component='img'
-                      src={GoogleIcon}
-                      alt='Google icon'
-                      sx={{
-                        width: {
-                          xl: '6rem',
-                          lg: '3.5rem',
-                          md: '6rem',
-                          sm: '6rem',
-                          xs: '6rem',
-                        },
-                        mx: 1,
-                        mt: 2,
-                        mb: 0.5,
-                      }}
-                    />
-                  </BootstrapTooltip>
-                </ListItem>
+                <BootstrapTooltip title='figma'>
+                  <Box
+                    component='img'
+                    src={FigmaIcon}
+                    alt='figma icon'
+                    sx={{
+                      //  // width: {
+                      //   xl: '6rem',
+                      //   lg: '3.8rem',
+                      //   md: '4rem',
+                      //   sm: '4rem',
+                      //   xs: '2rem',
+                      // },
+                      height: {
+                        xl: '6rem',
+                        lg: '3.8rem',
+                        md: '4rem',
+                        sm: '4.5rem',
+                        xs: '2.5rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='illustrator'>
+                  <Box
+                    component='img'
+                    src={AIIcon}
+                    alt='illustrator icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='photoshop'>
+                  <Box
+                    component='img'
+                    src={PSIcon}
+                    alt='photoshop icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='xd'>
+                  <Box
+                    component='img'
+                    src={XDIcon}
+                    alt='xd icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='canva'>
+                  <Box
+                    component='img'
+                    src={CanvaIcon}
+                    alt='canva icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='trello'>
+                  <Box
+                    component='img'
+                    src={TrelloIcon}
+                    alt='trello icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
+                <BootstrapTooltip title='google analytics '>
+                  <Box
+                    component='img'
+                    src={GoogleIcon}
+                    alt='Google icon'
+                    sx={{
+                      width: {
+                        xl: '6.2rem',
+                        lg: '4rem',
+                        md: '3rem',
+                        sm: '4.5rem',
+                        xs: '2rem',
+                      },
+                      mx: 1,
+                      mt: 2,
+                      mb: 0.5,
+                    }}
+                  />
+                </BootstrapTooltip>
               </List>
             </Grid>
 
@@ -730,11 +766,11 @@ function Skills() {
                   // mt: 1,
                   mb: 1,
                   fontSize: {
-                    xl: '2.2rem',
-                    lg: '2rem',
-                    md: '2.2rem',
-                    sm: '2.2rem',
-                    xs: '2.2rem',
+                    xl: '2rem',
+                    lg: '1.8rem',
+                    md: '2rem',
+                    sm: '1.6rem',
+                    xs: '1.2rem',
                   },
                 }}
                 variant='h5'
@@ -747,11 +783,11 @@ function Skills() {
                   mt: 1,
                   mb: 1,
                   fontSize: {
-                    xl: '2.2rem',
-                    lg: '2rem',
-                    md: '2.2rem',
-                    sm: '2.2rem',
-                    xs: '2.2rem',
+                    xl: '2rem',
+                    lg: '1.8rem',
+                    md: '2rem',
+                    sm: '1.6rem',
+                    xs: '1.2rem',
                   },
                 }}
                 variant='h5'
@@ -765,11 +801,11 @@ function Skills() {
                   mt: 1,
                   mb: 1,
                   fontSize: {
-                    xl: '2.2rem',
-                    lg: '2rem',
-                    md: '2.2rem',
-                    sm: '2.2rem',
-                    xs: '2.2rem',
+                    xl: '2rem',
+                    lg: '1.8rem',
+                    md: '2rem',
+                    sm: '1.6rem',
+                    xs: '1.2rem',
                   },
                 }}
                 variant='h5'

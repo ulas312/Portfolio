@@ -1,317 +1,441 @@
 import React from 'react';
-import '../styles/Experience.scss';
-import Image from '../assets/experience-background.png';
-import GaLogo from '../assets/ga-logo.png';
-import ZezesLogo from '../assets/zezes-logo.png';
-import PrintLogo from '../assets/312-logo.png';
+import Image from '../assets/skills-background.png';
+import apiIcon from '../assets/api.svg';
+import RestAPIIcon from '../assets/rest-api.svg';
+import SqlIcon from '../assets/sql.svg';
+import ShopifyIcon from '../assets/shopify.svg';
+import GoogleIcon from '../assets/google-analytics.svg';
+import HTMLIcon from '../assets/html.svg';
+
+import '../styles/Skills.scss';
 
 import {
   Grid,
-  Card,
-  CardContent,
-  CardMedia,
+  List,
   ListItem,
+  Button,
   Box,
   Typography,
+  styled,
+  Stack,
 } from '@mui/material';
-import { Stack } from '@mui/system';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
-function Home() {
+function Skills() {
+  const BootstrapTooltip = styled(({ className, ...props }) => (
+    <Tooltip {...props} arrow classes={{ popper: className }} />
+  ))(({ theme }) => ({
+    [`& .${tooltipClasses.arrow}`]: {
+      color: theme.palette.secondary.main,
+    },
+    [`& .${tooltipClasses.tooltip}`]: {
+      backgroundColor: theme.palette.secondary.main,
+      fontSize: theme.typography.pxToRem(40),
+    },
+  }));
+
   return (
     <Grid container component='main'>
       <img className='hero-image' src={Image} alt='background pattern' />
-      {/* <div
+      <div
         style={{
           position: 'absolute',
           left: '5%',
-          paddingTop: 20,
-          paddingBottom: 0,
-        }}
-      > */}
-      <Typography
-        className='about-text'
-        variant='h1'
-        align='center'
-        sx={{
-          position: 'absolute',
-          // top: '10vh',
-          pt: '10vh',
-          pl: {
-            xl: '50rem',
-            lg: '32.5rem',
-            md: '25rem',
-            sm: '15rem',
-            xs: '8rem',
-          },
-          justify: 'center',
-          fontSize: {
-            xl: '4rem',
-            lg: '4rem',
-            md: '4rem',
-            sm: '4rem',
-            xs: '3rem',
-          },
         }}
       >
-        experience
-      </Typography>
-      <Box
-        className='a2'
-        alignItems='center'
-        justifyContent='center'
-        style={{ width: '90vw' }}
-        sx={{
-          pt: {
-            xl: '12rem',
-            lg: '12rem',
-            md: '15rem',
-            sm: '13rem',
-            xs: '11rem',
-          },
-          px: {
-            xl: '2rem',
-            lg: '2rem',
-            md: '2rem',
-            sm: '2rem',
-            xs: '2rem',
-          },
-          pb: {
-            xl: '2rem',
-            lg: '2rem',
-            md: '2rem',
-            sm: '2rem',
-            xs: '2rem',
-          },
-        }}
-      >
-        <Grid sx={{ flexGrow: 1 }} className='a1'>
-          <Grid
-            className='a3'
-            item
-            container
-            spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}
+        <Box
+          sx={{
+            position: 'absolute',
+            top: '10vh',
+            left: {
+              xl: '33rem',
+              lg: '17rem',
+              md: '10rem',
+              sm: '4rem',
+              xs: '-6rem',
+            },
+            justify: 'center',
+          }}
+        >
+          <Typography
+            className='about-text'
+            variant='h1'
+            align='center'
+            sx={{
+              fontSize: {
+                xl: '5rem',
+                lg: '5rem',
+                md: '5rem',
+                sm: '5rem',
+                xs: '3rem',
+              },
+            }}
           >
-            <Grid container justifyContent='center'>
-              <Stack
-                className='a2'
-                direction={{
-                  xs: {
-                    xl: 'row',
-                    lg: 'row',
-                    md: 'row',
-                    sm: 'column',
-                    xs: 'column',
+            Skills
+          </Typography>
+          <Typography
+            sx={{ width: '600px' }}
+            className='about-text'
+            variant='h5'
+            align='center'
+          >
+            Hover over the icons for names
+          </Typography>
+        </Box>
+        <Box
+          alignItems='center'
+          justifyContent='center'
+          style={{ width: '90vw' }}
+          sx={{
+            position: 'absolute',
+            height: '70vh',
+            top: '22vh',
+          }}
+        >
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
                   },
                 }}
-                spacing={{
-                  xs: {
-                    xl: '4',
-                    lg: '4',
-                    md: '2',
-                    sm: '1',
-                    xs: '1',
-                  },
-                }}
+                variant='h3'
+                component='div'
               >
-                {/* <Card sx={{ height: 690, width: 500, mr: 4 }}>
-                  <CardMedia
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      height: 'auto',
-                      width: 180,
-                      mx: 19,
-                      mt: 2,
-                      mb: 1,
-                      // maxHeight: { xs: 233, md: 167 },
-                      // maxWidth: { xs: 350, md: 250 },
-                    }}
-                    component='img'
-                    alt='General Assembly logo'
-                    image={GaLogo}
-                  />
-                  <CardContent>
-                    <Typography
-                      variant='h3'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 35 }}
-                    >
-                      <u>General Assembly</u>
-                    </Typography>
-                    <Typography
-                      variant='h4'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 30 }}
-                    >
-                      Software Engineering Immersive.
-                    </Typography>
-                    <Typography
-                      variant='h4'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 26 }}
-                    >
-                      Oct 2022 - Jan 2023 - London, Remote.
-                    </Typography>
-                    <Typography
-                      className='experience-text'
-                      variant='p'
-                      color='text.secondary'
-                    >
-                      Throughout the 12 week intensive course and the 450+ hours
-                      of homework, I learnt the fundamentals of full stack
-                      development and covered multiple modules that ended up
-                      with a project at the end to test and demonstrate my
-                      knowledge. These projects varied from individual to pair
-                      programming.
-                    </Typography>
-                  </CardContent>
-                </Card> */}
+                Frontend:
+              </Typography>
 
-                {/* <Card sx={{ height: 690, width: 500, mx: 4 }}>
-                  <CardMedia
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      height: 'auto',
-                      width: 220,
-                      mx: 16,
-                      mt: 2,
-                      mb: 1,
-                      // maxHeight: { xs: 233, md: 167 },
-                      // maxWidth: { xs: 350, md: 250 },
-                    }}
-                    component='img'
-                    alt='Zezes logo'
-                    image={ZezesLogo}
-                  />
-                  <CardContent>
-                    <Typography
-                      variant='h3'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 35 }}
-                    >
-                      <u>Zeze's Mediterranean</u>
-                    </Typography>
-                    <Typography
-                      variant='h4'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 30 }}
-                    >
-                      Co-founder & Head of Marketing.
-                    </Typography>
-                    <Typography
-                      variant='h4'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 26 }}
-                    >
-                      May 2020 - Oct 2022 - Swanage, Dorset.
-                    </Typography>
-                    <Typography
-                      className='experience-text'
-                      variant='p'
-                      color='text.secondary'
-                    >
-                      <ListItem sx={{ display: 'list-item' }}>
-                        Designing, building and maintaining the business website
-                        that was mobile and tablet responsive which had
-                        consistent visitor growth over the duration of the
-                        business.
-                      </ListItem>
-                      <ListItem sx={{ display: 'list-item' }}>
-                        Promoting the business through various online and
-                        offline channels which increased overall bookings by
-                        50%.
-                      </ListItem>
-                      <ListItem sx={{ display: 'list-item' }}>
-                        Ensuring an effective communication strategy was in
-                        place.
-                      </ListItem>
-                    </Typography>
-                  </CardContent>
-                </Card> */}
+              <List component={Stack} direction='row'>
+                <BootstrapTooltip title='HTML'>
+                  <Button>
+                    <i
+                      class='devicon-html5-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
 
-                {/* <Card sx={{ height: 690, width: 500, ml: 4 }}>
-                  <CardMedia
-                    sx={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      height: 'auto',
-                      width: 210,
-                      mx: 19,
-                      mt: 2,
-                      mb: 1,
-                      // maxHeight: { xs: 233, md: 167 },
-                      // maxWidth: { xs: 350, md: 250 },
-                    }}
-                    component='img'
-                    alt='312 logo'
-                    image={PrintLogo}
-                  />
-                  <CardContent>
-                    <Typography
-                      variant='h3'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 35 }}
-                    >
-                      <u>312 Studios</u>
-                    </Typography>
-                    <Typography
-                      variant='h4'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 30 }}
-                    >
-                      Co-founder & Head of Operations.
-                    </Typography>
-                    <Typography
-                      variant='h4'
-                      component='div'
-                      color='text.secondary'
-                      sx={{ fontSize: 26 }}
-                    >
-                      Jan 2018 - Feb 2020 - Poole, Dorset.
-                    </Typography>
-                    <Typography
-                      className='experience-text'
-                      variant='p'
-                      color='text.secondary'
-                    >
-                      <ListItem sx={{ display: 'list-item' }}>
-                        Dealing directly with clients, creating design briefs
-                        from their needs making sure timeframes and deadlines
-                        were achieved.
-                      </ListItem>
-                      <ListItem sx={{ display: 'list-item' }}>
-                        Gained hands-on experience in all aspects of graphics
-                        and design from manufacturing, large format printing,
-                        vehicle wrapping and fitting to digital marketing seo
-                        and websites.
-                      </ListItem>
-                      <ListItem sx={{ display: 'list-item' }}>
-                        Within a short amount of time I quickly learnt new
-                        programs and how to effectively use them for my needs
-                        and become competent enough to run all the printers and
-                        necessary softwares on Windows computers.
-                      </ListItem>
-                    </Typography>
-                  </CardContent>
-                </Card> */}
-              </Stack>
+                <BootstrapTooltip title='CSS'>
+                  <Button>
+                    <i
+                      class='devicon-css3-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='SASS'>
+                  <Button>
+                    <i
+                      class='devicon-sass-original'
+                      style={{ fontSize: '110px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='JavaScript'>
+                  <Button>
+                    <i
+                      class='devicon-javascript-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='react'>
+                  <Button>
+                    <i
+                      class='devicon-react-original'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='material ui'>
+                  <Button>
+                    <i
+                      class='devicon-materialui-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='bulma'>
+                  <Button>
+                    <i
+                      class='devicon-bulma-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+              </List>
+            </Grid>
+
+            <Grid item xs={12} md={6}>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
+                  },
+                }}
+                variant='h3'
+                component='div'
+              >
+                Backend:
+              </Typography>
+              <List component={Stack} direction='row'>
+                <BootstrapTooltip title='nodejs'>
+                  <Button>
+                    <i
+                      class='devicon-nodejs-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='mongodb'>
+                  <Button>
+                    <i
+                      class='devicon-mongodb-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='express'>
+                  <Button>
+                    <i
+                      class='devicon-express-original'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='python'>
+                  <Button>
+                    <i
+                      class='devicon-python-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='django'>
+                  <Button>
+                    <i
+                      class='devicon-django-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='sql'>
+                  <Button>
+                    <img
+                      src={SqlIcon}
+                      alt='api icon'
+                      style={{ width: '100px' }}
+                    />
+                  </Button>
+                </BootstrapTooltip>
+                <BootstrapTooltip title='postgresql'>
+                  <Button>
+                    <i
+                      class='devicon-postgresql-plain'
+                      style={{ fontSize: '100px' }}
+                    ></i>
+                  </Button>
+                </BootstrapTooltip>
+              </List>
             </Grid>
           </Grid>
-        </Grid>
-      </Box>
-      {/* </div> */}
+
+          <Grid container spacing={2}>
+            <Grid item xs={12} md={6}>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
+                  },
+                }}
+                variant='h3'
+                component='div'
+              >
+                Other:
+              </Typography>
+              <List component={Stack} direction='row'>
+                <ListItem>
+                  <BootstrapTooltip title='git'>
+                    <Button>
+                      <i
+                        class='devicon-git-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='github'>
+                    <Button>
+                      <i
+                        class='devicon-github-original'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='api'>
+                    <Button>
+                      <img
+                        src={apiIcon}
+                        alt='api icon'
+                        style={{ width: '100px' }}
+                      />
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='restful api'>
+                    <Button>
+                      <img
+                        src={RestAPIIcon}
+                        alt='api icon'
+                        style={{ width: '100px' }}
+                      />
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='vscode'>
+                    <Button>
+                      <i
+                        class='devicon-vscode-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='shopify'>
+                    <Button>
+                      <img
+                        src={ShopifyIcon}
+                        alt='api icon'
+                        style={{ width: '100px' }}
+                      />
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='wordpress'>
+                    <Button>
+                      <i
+                        class='devicon-wordpress-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                </ListItem>
+              </List>
+            </Grid>
+
+            <Grid item xs={12} md={6}>
+              <Typography
+                sx={{
+                  mt: 4,
+                  mb: 2,
+                  fontSize: {
+                    xl: '3rem',
+                    lg: '3rem',
+                    md: '3rem',
+                    sm: '2rem',
+                    xs: '2rem',
+                  },
+                }}
+                variant='h3'
+                component='div'
+              >
+                Design & Marketing:
+              </Typography>
+              <List component={Stack} direction='row'>
+                <ListItem>
+                  <BootstrapTooltip title='figma'>
+                    <Button>
+                      <i
+                        class='devicon-figma-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='illustrator'>
+                    <Button>
+                      <i
+                        class='devicon-illustrator-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='photoshop'>
+                    <Button>
+                      <i
+                        class='devicon-photoshop-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='xd'>
+                    <Button>
+                      <i
+                        class='devicon-xd-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='canva'>
+                    <Button>
+                      <i
+                        class='devicon-canva-original'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='trello'>
+                    <Button>
+                      <i
+                        class='devicon-trello-plain'
+                        style={{ fontSize: '100px' }}
+                      ></i>
+                    </Button>
+                  </BootstrapTooltip>
+                  <BootstrapTooltip title='google analytics '>
+                    <Button>
+                      <img
+                        src={GoogleIcon}
+                        alt='api icon'
+                        style={{ width: '100px' }}
+                      />
+                    </Button>
+                  </BootstrapTooltip>
+                </ListItem>
+              </List>
+            </Grid>
+
+            <Grid item xs={12} md={12}>
+              <Typography sx={{ mt: 4, mb: 2 }} variant='h5' component='div'>
+                <u>Currently learning:</u> TypeScript.
+              </Typography>
+              <Typography sx={{ mt: 4, mb: 2 }} variant='h5' component='div'>
+                <u>Business skills:</u> Startup, business operations, marketing,
+                team management, customer experience.
+              </Typography>
+              <Typography sx={{ mt: 4, mb: 2 }} variant='h5' component='div'>
+                <u>Languages:</u> Bilingual, fluent in English as well as
+                Turkish.
+              </Typography>
+            </Grid>
+          </Grid>
+        </Box>
+      </div>
     </Grid>
   );
 }
 
-export default Home;
+export default Skills;
