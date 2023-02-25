@@ -16,28 +16,48 @@ function HeroSection() {
           display: 'flex',
           flexGrow: 1,
           position: 'absolute',
-          top: '20vh',
-          left: '9%',
+          top: {
+            xl: '20vh',
+            lg: '20vh',
+            md: '15vh',
+            sm: '12vh',
+            xs: '15vh',
+          },
+          left: {
+            xl: '8%',
+            lg: '5%',
+            md: '6%',
+            sm: '9%',
+            xs: '8%',
+          },
         }}
       >
         <Grid
           container
           spacing={2}
           alignItems='center'
-          justifyContent='center'
-          marginRight={2}
+          // justifyContent='center'
+          // marginRight={2}
         >
           <Grid
             item
-            xs={12}
-            sm={6}
-            md={1}
+            // xs={12}
+            // sm={6}
+            // md={1}
             sx={{
-              marginRight: {
-                xl: '20rem',
-                lg: '15rem',
-                md: '14rem',
+              pr: {
+                xl: 7,
+                lg: 4.7,
+                md: 7,
+                sm: 7,
+                sx: 7,
+              },
+              marginLeft: {
+                // xl: '1rem',
+                // lg: '1rem',
+                // md: '0rem',
                 // sm: '0rem',
+                // sx: '-10rem',
               },
               lineHeight: 1,
               display: 'flex',
@@ -47,14 +67,15 @@ function HeroSection() {
             display='flex'
           >
             <Typography
+              className='hero-text'
               variant='p'
               sx={{
                 lineHeight: 1,
                 maxWidth: '25vw',
                 fontSize: {
-                  xl: '20rem',
-                  lg: '15rem',
-                  md: '14rem',
+                  xl: '18rem',
+                  lg: '12rem',
+                  md: '20rem',
                   sm: '15rem',
                   xs: '10.5rem',
                 },
@@ -65,17 +86,19 @@ function HeroSection() {
               <br />
             </Typography>
             <Typography
+              className='hero-text'
               variant='p'
               sx={{
                 lineHeight: 1,
                 maxWidth: '25vw',
                 fontSize: {
-                  xl: '20rem',
-                  lg: '15rem',
-                  md: '14rem',
+                  xl: '18rem',
+                  lg: '12rem',
+                  md: '20rem',
                   sm: '15rem',
                   xs: '10.5rem',
                 },
+
                 textAlign: 'left',
               }}
             >
@@ -83,15 +106,16 @@ function HeroSection() {
             </Typography>
           </Grid>
 
-          <Grid item xs={12} sm={6} md={8}>
+          <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
             <Typography
               variant='h3'
               sx={{
                 fontSize: {
+                  xl: '3.5rem',
                   lg: '3.5rem',
-                  md: '2.5rem',
-                  sm: '2rem',
-                  xs: '2.3rem',
+                  md: '2.8rem',
+                  sm: '2.5rem',
+                  xs: '2.5rem',
                 },
               }}
             >
@@ -109,10 +133,11 @@ function HeroSection() {
               variant='h3'
               sx={{
                 fontSize: {
+                  xl: '6rem',
                   lg: '6rem',
-                  md: '5rem',
-                  sm: '4.3rem',
-                  xs: '2.45rem',
+                  md: '5.3rem',
+                  sm: '4.8rem',
+                  xs: '2.6rem',
                 },
               }}
             >
@@ -124,22 +149,22 @@ function HeroSection() {
               sx={{
                 fontSize: {
                   lg: '4rem',
-                  md: '2.5rem',
-                  sm: '3.2rem',
-                  xs: '1.9rem',
+                  md: '2.8rem',
+                  sm: '3.7rem',
+                  xs: '2rem',
                 },
               }}
             >
-              nice to meet you. Please take a
+              Nice to meet you. Please take a
             </Typography>
             <Typography
               variant='h3'
               sx={{
                 fontSize: {
                   lg: '4rem',
-                  md: '2.5rem',
-                  sm: '3.2rem',
-                  xs: '1.9rem',
+                  md: '2.8rem',
+                  sm: '3.7rem',
+                  xs: '2rem',
                 },
               }}
             >
@@ -152,9 +177,9 @@ function HeroSection() {
                 fontSize: {
                   xl: '2.1rem',
                   lg: '1.6rem',
-                  md: '1.5rem',
-                  sm: '1.2rem',
-                  xs: '1.2rem',
+                  md: '1.8rem',
+                  sm: '1.7rem',
+                  xs: '1.3rem',
                 },
               }}
             >
