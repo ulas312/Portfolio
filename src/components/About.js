@@ -126,8 +126,8 @@ function About() {
                         xl: '80%',
                         lg: '90%',
                         md: '90%',
-                        sm: '45%',
-                        xs: '40%',
+                        sm: '35%',
+                        xs: '30%',
                       },
                       height: 'auto',
                     }}
@@ -149,7 +149,7 @@ function About() {
                         xl: '2rem',
                         lg: '1.8rem',
                         md: '2rem',
-                        sm: '2rem',
+                        sm: '1.8rem',
                         xs: '1.2rem',
                       },
                     }}
@@ -166,7 +166,7 @@ function About() {
                         xl: '1.51rem',
                         lg: '1.22rem',
                         md: '1.5rem',
-                        sm: '1.5rem',
+                        sm: '1.3rem',
                         xs: '0.75rem',
                       },
                     }}
@@ -204,7 +204,7 @@ function About() {
                         xl: '2rem',
                         lg: '1.8rem',
                         md: '2rem',
-                        sm: '2rem',
+                        sm: '1.8rem',
                         xs: '1.2rem',
                       },
                     }}
@@ -221,7 +221,7 @@ function About() {
                         xl: '1.51rem',
                         lg: '1.22rem',
                         md: '1.5rem',
-                        sm: '1.5rem',
+                        sm: '1.3rem',
                         xs: '0.75rem',
                       },
                     }}
@@ -241,7 +241,7 @@ function About() {
                         xl: '1.51rem',
                         lg: '1.22rem',
                         md: '1.5rem',
-                        sm: '1.5rem',
+                        sm: '1.3rem',
                         xs: '0.75rem',
                       },
                     }}
@@ -259,7 +259,7 @@ function About() {
                         xl: '1.51rem',
                         lg: '1.22rem',
                         md: '1.5rem',
-                        sm: '1.5rem',
+                        sm: '1.3rem',
                         xs: '0.75rem',
                       },
                     }}
