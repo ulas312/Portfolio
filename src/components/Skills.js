@@ -55,6 +55,15 @@ function Skills() {
       fontSize: theme.typography.pxToRem(40),
     },
   }));
+  // const [show, setShow] = React.useState(false);
+
+  // const handleClick = () => {
+  //   if (show) {
+  //     setShow(false);
+  //   } else {
+  //     setShow(true);
+  //   }
+  // };
 
   return (
     <Grid container component='main'>
@@ -66,7 +75,6 @@ function Skills() {
         }}
       >
         <Box
-          className='a2'
           sx={{
             position: 'absolute',
             top: {
@@ -141,7 +149,11 @@ function Skills() {
                 Frontend:
               </Typography>
               <List component={Stack} direction='row'>
-                <BootstrapTooltip title='HTML'>
+                <BootstrapTooltip
+                  enterTouchDelay={0}
+                  title='HTML'
+                  enterTouchDelay={0}
+                >
                   <Box
                     component='img'
                     src={HTMLIcon}
@@ -161,7 +173,7 @@ function Skills() {
                   />
                 </BootstrapTooltip>
 
-                <BootstrapTooltip title='CSS'>
+                <BootstrapTooltip enterTouchDelay={0} title='CSS'>
                   <Box
                     component='img'
                     src={CSSIcon}
@@ -181,7 +193,7 @@ function Skills() {
                   />
                 </BootstrapTooltip>
 
-                <BootstrapTooltip title='SASS'>
+                <BootstrapTooltip enterTouchDelay={0} title='SASS'>
                   <Box
                     component='img'
                     src={SASSIcon}
@@ -200,7 +212,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='JavaScript'>
+                <BootstrapTooltip enterTouchDelay={0} title='JavaScript'>
                   <Box
                     component='img'
                     src={JSIcon}
@@ -219,7 +231,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='React'>
+                <BootstrapTooltip enterTouchDelay={0} title='React'>
                   <Box
                     component='img'
                     src={ReactIcon}
@@ -238,7 +250,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='material ui'>
+                <BootstrapTooltip enterTouchDelay={0} title='material ui'>
                   <Box
                     component='img'
                     src={MUIIcon}
@@ -257,7 +269,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='Bulma'>
+                <BootstrapTooltip enterTouchDelay={0} title='Bulma'>
                   <Box
                     component='img'
                     src={BulmaIcon}
@@ -298,7 +310,7 @@ function Skills() {
                 Backend:
               </Typography>
               <List component={Stack} direction='row'>
-                <BootstrapTooltip title='nodejs'>
+                <BootstrapTooltip enterTouchDelay={0} title='nodejs'>
                   <Box
                     component='img'
                     src={NodeIcon}
@@ -317,7 +329,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='mongodb'>
+                <BootstrapTooltip enterTouchDelay={0} title='mongodb'>
                   <Box
                     component='img'
                     src={MongoIcon}
@@ -343,7 +355,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='express'>
+                <BootstrapTooltip enterTouchDelay={0} title='express'>
                   <Box
                     component='img'
                     src={ExpressIcon}
@@ -362,7 +374,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='python'>
+                <BootstrapTooltip enterTouchDelay={0} title='python'>
                   <Box
                     component='img'
                     src={PythonIcon}
@@ -381,7 +393,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='django'>
+                <BootstrapTooltip enterTouchDelay={0} title='django'>
                   <Box
                     component='img'
                     src={DjangoIcon}
@@ -400,7 +412,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='sql'>
+                <BootstrapTooltip enterTouchDelay={0} title='sql'>
                   <Box
                     component='img'
                     src={SqlIcon}
@@ -419,7 +431,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='postgresql'>
+                <BootstrapTooltip enterTouchDelay={0} title='postgresql'>
                   <Box
                     component='img'
                     src={PostgresqlIcon}
@@ -462,7 +474,7 @@ function Skills() {
                 Other:
               </Typography>
               <List component={Stack} direction='row'>
-                <BootstrapTooltip title='git'>
+                <BootstrapTooltip enterTouchDelay={0} title='git'>
                   <Box
                     component='img'
                     src={GitIcon}
@@ -481,7 +493,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='github'>
+                <BootstrapTooltip enterTouchDelay={0} title='github'>
                   <Box
                     component='img'
                     src={GithubIcon}
@@ -500,7 +512,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='api'>
+                <BootstrapTooltip enterTouchDelay={0} title='api'>
                   <Box
                     component='img'
                     src={apiIcon}
@@ -519,7 +531,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='restful api'>
+                <BootstrapTooltip enterTouchDelay={0} title='restful api'>
                   <Box
                     component='img'
                     src={RestAPIIcon}
@@ -538,7 +550,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='vscode'>
+                <BootstrapTooltip enterTouchDelay={0} title='vscode'>
                   <Box
                     component='img'
                     src={VScodeIcon}
@@ -557,7 +569,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='shopify'>
+                <BootstrapTooltip enterTouchDelay={0} title='shopify'>
                   <Box
                     component='img'
                     src={ShopifyIcon}
@@ -576,7 +588,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='wordpress'>
+                <BootstrapTooltip enterTouchDelay={0} title='wordpress'>
                   <Box
                     component='img'
                     src={WordpressIcon}
@@ -617,7 +629,7 @@ function Skills() {
                 Design & Marketing:
               </Typography>
               <List component={Stack} direction='row'>
-                <BootstrapTooltip title='figma'>
+                <BootstrapTooltip enterTouchDelay={0} title='figma'>
                   <Box
                     component='img'
                     src={FigmaIcon}
@@ -643,7 +655,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='illustrator'>
+                <BootstrapTooltip enterTouchDelay={0} title='illustrator'>
                   <Box
                     component='img'
                     src={AIIcon}
@@ -662,7 +674,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='photoshop'>
+                <BootstrapTooltip enterTouchDelay={0} title='photoshop'>
                   <Box
                     component='img'
                     src={PSIcon}
@@ -681,7 +693,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='xd'>
+                <BootstrapTooltip enterTouchDelay={0} title='xd'>
                   <Box
                     component='img'
                     src={XDIcon}
@@ -700,7 +712,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='canva'>
+                <BootstrapTooltip enterTouchDelay={0} title='canva'>
                   <Box
                     component='img'
                     src={CanvaIcon}
@@ -719,7 +731,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='trello'>
+                <BootstrapTooltip enterTouchDelay={0} title='trello'>
                   <Box
                     component='img'
                     src={TrelloIcon}
@@ -738,7 +750,7 @@ function Skills() {
                     }}
                   />
                 </BootstrapTooltip>
-                <BootstrapTooltip title='google analytics '>
+                <BootstrapTooltip enterTouchDelay={0} title='google analytics '>
                   <Box
                     component='img'
                     src={GoogleIcon}
