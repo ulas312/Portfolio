@@ -55,15 +55,6 @@ function Skills() {
       fontSize: theme.typography.pxToRem(40),
     },
   }));
-  // const [show, setShow] = React.useState(false);
-
-  // const handleClick = () => {
-  //   if (show) {
-  //     setShow(false);
-  //   } else {
-  //     setShow(true);
-  //   }
-  // };
 
   return (
     <Grid container component='main'>
@@ -113,10 +104,10 @@ function Skills() {
           <Typography
             sx={{ width: '300px' }}
             className='about-text'
-            variant='h5'
+            variant='h6'
             align='center'
           >
-            Hover over the icons for names
+            Hover or click over the icons for names
           </Typography>
         </Box>
         <Box
@@ -133,7 +124,7 @@ function Skills() {
             <Grid item xs={12} md={6}>
               <Typography
                 sx={{
-                  mt: 4,
+                  // mt: 4,
                   mb: 2,
                   fontSize: {
                     xl: '4rem',
@@ -149,11 +140,7 @@ function Skills() {
                 Frontend:
               </Typography>
               <List component={Stack} direction='row'>
-                <BootstrapTooltip
-                  enterTouchDelay={0}
-                  title='HTML'
-                  enterTouchDelay={0}
-                >
+                <BootstrapTooltip enterTouchDelay={0} title='HTML'>
                   <Box
                     component='img'
                     src={HTMLIcon}
@@ -167,8 +154,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -187,8 +174,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -207,8 +194,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -226,8 +213,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -245,8 +232,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -264,8 +251,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -283,8 +270,8 @@ function Skills() {
                         xs: '1.6rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -324,8 +311,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -350,8 +337,8 @@ function Skills() {
                         xs: '2.5rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -369,8 +356,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -388,8 +375,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -407,8 +394,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -426,8 +413,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -445,8 +432,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -488,8 +475,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -507,8 +494,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -526,8 +513,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -545,8 +532,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -564,8 +551,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -583,8 +570,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -602,8 +589,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -650,8 +637,8 @@ function Skills() {
                         xs: '2.5rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -669,8 +656,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -688,8 +675,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -707,8 +694,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -726,8 +713,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -745,8 +732,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -764,8 +751,8 @@ function Skills() {
                         xs: '2rem',
                       },
                       mx: 1,
-                      mt: 2,
-                      mb: 0.5,
+                      // mt: 2,
+                      // mb: 0.5,
                     }}
                   />
                 </BootstrapTooltip>
@@ -778,53 +765,59 @@ function Skills() {
                   // mt: 1,
                   mb: 1,
                   fontSize: {
-                    xl: '2rem',
-                    lg: '1.8rem',
+                    xl: '1.8rem',
+                    lg: '1.6rem',
                     md: '2rem',
-                    sm: '1.6rem',
-                    xs: '1.2rem',
+                    sm: '1.5rem',
+                    xs: '1.1rem',
                   },
                 }}
                 variant='h5'
                 component='div'
               >
-                <u>Currently learning: TypeScript.</u>
+                <u>Currently learning:</u>{' '}
+                <span className='skills-text'> TypeScript.</span>
               </Typography>
               <Typography
                 sx={{
                   mt: 1,
                   mb: 1,
                   fontSize: {
-                    xl: '2rem',
-                    lg: '1.8rem',
+                    xl: '1.8rem',
+                    lg: '1.6rem',
                     md: '2rem',
-                    sm: '1.6rem',
-                    xs: '1.2rem',
+                    sm: '1.5rem',
+                    xs: '1.1rem',
                   },
                 }}
                 variant='h5'
                 component='div'
               >
-                <u>Business skills:</u> Startup, business operations, marketing,
-                team management, customer experience.
+                <u>Business skills:</u>{' '}
+                <span className='skills-text'>
+                  Startup, business operations, marketing, team management,
+                  customer experience.
+                </span>
               </Typography>
               <Typography
                 sx={{
                   mt: 1,
                   mb: 1,
                   fontSize: {
-                    xl: '2rem',
-                    lg: '1.8rem',
+                    xl: '1.8rem',
+                    lg: '1.6rem',
                     md: '2rem',
-                    sm: '1.6rem',
-                    xs: '1.2rem',
+                    sm: '1.5rem',
+                    xs: '1.1rem',
                   },
                 }}
                 variant='h5'
                 component='div'
               >
-                <u>Languages:</u> Bilingual, fluent in English as well as
-                Turkish.
+                <u>Languages:</u>{' '}
+                <span className='skills-text'>
+                  Bilingual, fluent in English as well as Turkish.
+                </span>
               </Typography>
             </Grid>
           </Grid>
