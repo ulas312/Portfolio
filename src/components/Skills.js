@@ -124,7 +124,7 @@ function Skills() {
             <Grid item xs={12} md={6}>
               <Typography
                 sx={{
-                  // mt: 4,
+                  mt: 1,
                   mb: 2,
                   fontSize: {
                     xl: '4rem',
@@ -281,8 +281,8 @@ function Skills() {
             <Grid item xs={12} md={6}>
               <Typography
                 sx={{
-                  mt: 4,
-                  mb: 2,
+                  mt: 1,
+                  mb: 1,
                   fontSize: {
                     xl: '4rem',
                     lg: '3rem',
@@ -445,8 +445,8 @@ function Skills() {
             <Grid item xs={12} md={6}>
               <Typography
                 sx={{
-                  mt: 4,
-                  mb: 2,
+                  mt: 1,
+                  mb: 1,
                   fontSize: {
                     xl: '4rem',
                     lg: '3rem',
@@ -600,7 +600,7 @@ function Skills() {
             <Grid item xs={12} md={6}>
               <Typography
                 sx={{
-                  mt: 4,
+                  mt: 1,
                   mb: 2,
                   fontSize: {
                     xl: '4rem',
@@ -762,7 +762,7 @@ function Skills() {
             <Grid item xs={12} md={12}>
               <Typography
                 sx={{
-                  // mt: 1,
+                  mt: 1,
                   mb: 1,
                   fontSize: {
                     xl: '1.8rem',
