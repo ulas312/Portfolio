@@ -154,9 +154,9 @@ export default function EmailForm() {
                 className='card-text'
                 onChange={handleOnChange}
                 value={inputs.email}
-                // id='email'
-                // type='email'
-                // name='email'
+                id='email'
+                type='email'
+                name='email'
                 placeholder='Email'
               />
               {/* <TextField
