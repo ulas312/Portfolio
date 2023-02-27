@@ -68,13 +68,8 @@ function About() {
             sm: '12vh',
             xs: '12vh',
           },
-          // left: '9%',
           width: '100%',
-          // px: 1,
           px: theme.spacing(2),
-
-          // minHeight: '100vh',
-          // height: '80vh',
           backgroundColor: 'primary.light',
           pt: theme.spacing(2),
           pb: theme.spacing(2),
@@ -143,7 +138,6 @@ function About() {
                     className='about-text'
                     variant='h2'
                     align='left'
-                    // textAlign='center'
                     sx={{
                       fontSize: {
                         xl: '2rem',
@@ -160,7 +154,6 @@ function About() {
                     className='about-text'
                     variant='h2'
                     align='left'
-                    // textAlign='center'
                     sx={{
                       fontSize: {
                         xl: '1.51rem',
@@ -185,19 +178,10 @@ function About() {
                     ultimate goal is to become a highly skilled software
                     engineer and make a meaningful impact in the industry.
                   </Typography>
-                  {/* <Typography
-                    className='about-text'
-                    variant='h2'
-                    align='center'
-                    sx={{ pt: 1 }}
-                  >
-                    <u>INTERESTS:</u>
-                  </Typography> */}
                   <Typography
                     className='about-text'
                     variant='h2'
                     align='left'
-                    // textAlign='center'
                     sx={{
                       pt: 1,
                       fontSize: {
@@ -216,7 +200,6 @@ function About() {
                     variant='h3'
                     align='left'
                     sx={{
-                      // pt: 2,
                       fontSize: {
                         xl: '1.51rem',
                         lg: '1.22rem',

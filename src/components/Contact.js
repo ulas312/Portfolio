@@ -17,7 +17,6 @@ import {
   Typography,
   List,
 } from '@mui/material';
-// import EmailIcon from '@mui/icons-material/Email';
 
 function Contact() {
   return (
@@ -28,7 +27,6 @@ function Contact() {
         justifyContent='center'
         item
         xs={12}
-        sm={6}
         style={{ width: '90vw' }}
         sx={{
           position: 'absolute',
@@ -41,33 +39,22 @@ function Contact() {
             xs: '15vh',
           },
           left: {
-            xl: '10%',
-            lg: '10%',
-            md: '10%',
-            sm: '10%',
-            xs: '10%',
+            xl: 0,
+            lg: 0,
+            md: 0,
+            sm: 0,
+            xs: '4%',
           },
-          // left: '10%',
         }}
       >
         <Grid sx={{ flexGrow: 1 }}>
-          <Grid
-            item
-            // xs={12}
-            container
-            spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 8, md: 12 }}
-          >
+          <Grid item container>
             <Grid container justifyContent='center'>
               <Box
                 sx={{
                   display: 'flex',
                   flexWrap: 'wrap',
-                  '& > :not(style)': {
-                    ml: 4,
-                    width: 500,
-                    height: 690,
-                  },
+                  ml: 1,
                 }}
               >
                 <EmailForm />
@@ -76,12 +63,17 @@ function Contact() {
               <Box
                 sx={{
                   flexGrow: 1,
-                  maxWidth: 600,
+                  maxWidth: {
+                    xl: 170,
+                    lg: 300,
+                    md: 250,
+                    sm: 100,
+                  },
                   display: {
                     xl: 'block',
                     lg: 'block',
                     md: 'block',
-                    sm: 'none',
+                    sm: 'block',
                     xs: 'none',
                   },
                 }}
@@ -95,12 +87,11 @@ function Contact() {
                             xl: '22rem',
                             lg: '22rem',
                             md: '22rem',
-                            sm: '22rem',
+                            sm: '11rem',
                             xs: '15rem',
                           },
-                          height: 690,
-                          // width: 500,
-                          ml: 4,
+                          height: 590,
+                          ml: 2,
                         }}
                         style={{ backgroundColor: 'transparent' }}
                       >
@@ -110,22 +101,26 @@ function Contact() {
                             justifyContent: 'center',
                           }}
                         >
-                          <Button textalign='center' href='' target='_blank'>
+                          <Button textAlign='center' href='' target='_blank'>
                             <Box
                               component='img'
                               src={EmailIcon}
                               alt='Email icon'
                               sx={{
                                 width: {
-                                  xl: '10rem',
-                                  lg: '10rem',
-                                  md: '10rem',
-                                  sm: '10rem',
-                                  xs: '10rem',
+                                  xl: '6.5rem',
+                                  lg: '6rem',
+                                  md: '6rem',
+                                  sm: '5rem',
+                                  xs: '5rem',
                                 },
-                                mx: 15,
-                                mt: 2,
-                                mb: 0.5,
+                                mt: {
+                                  xl: 0,
+                                  lg: 2,
+                                  md: 2,
+                                  sm: 6,
+                                  xs: 0,
+                                },
                               }}
                             />
                           </Button>
@@ -135,7 +130,15 @@ function Contact() {
                             variant='h4'
                             component='div'
                             color='text.primary'
-                            sx={{ fontSize: 30, textAlign: 'center' }}
+                            sx={{
+                              fontSize: {
+                                xl: 30,
+                                lg: 30,
+                                md: 30,
+                                sm: 20,
+                              },
+                              textAlign: 'center',
+                            }}
                           >
                             temel.ulas@googlemail.com
                           </Typography>
@@ -158,15 +161,13 @@ function Contact() {
                               alt='Github icon'
                               sx={{
                                 width: {
-                                  xl: '10rem',
-                                  lg: '10rem',
-                                  md: '10rem',
-                                  sm: '10rem',
-                                  xs: '10rem',
+                                  xl: '6.5rem',
+                                  lg: '6rem',
+                                  md: '6rem',
+                                  sm: '5rem',
+                                  xs: '5rem',
                                 },
-                                mx: 15,
                                 mt: 2,
-                                mb: 0.5,
                               }}
                             />
                           </Button>
@@ -176,7 +177,15 @@ function Contact() {
                             variant='h4'
                             component='div'
                             color='text.primary'
-                            sx={{ fontSize: 30, textAlign: 'center' }}
+                            sx={{
+                              fontSize: {
+                                xl: 30,
+                                lg: 30,
+                                md: 30,
+                                sm: 20,
+                              },
+                              textAlign: 'center',
+                            }}
                           >
                             github.com/ulas312
                           </Typography>
@@ -198,15 +207,13 @@ function Contact() {
                               alt='LinkedIn icon'
                               sx={{
                                 width: {
-                                  xl: '10rem',
-                                  lg: '10rem',
-                                  md: '10rem',
-                                  sm: '10rem',
-                                  xs: '10rem',
+                                  xl: '6.5rem',
+                                  lg: '6rem',
+                                  md: '6rem',
+                                  sm: '5rem',
+                                  xs: '5rem',
                                 },
-                                mx: 15,
-                                mt: 1,
-                                mb: 0.5,
+                                mt: 2,
                               }}
                             />
                           </Button>
@@ -216,7 +223,15 @@ function Contact() {
                             variant='h4'
                             component='div'
                             color='text.primary'
-                            sx={{ fontSize: 30, textAlign: 'center' }}
+                            sx={{
+                              fontSize: {
+                                xl: 30,
+                                lg: 30,
+                                md: 30,
+                                sm: 20,
+                              },
+                              textAlign: 'center',
+                            }}
                           >
                             /in/ulastemel
                           </Typography>

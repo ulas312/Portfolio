@@ -1,19 +1,18 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import '../../styles/EmailForm.scss';
-import EmailIcon from '../../assets/email-icon.svg';
-import GitHubIcon from '../../assets/github-icon.svg';
-import LinkedInIcon from '../../assets/linkedin-icon.svg';
 
 import {
   Grid,
   Card,
   CardContent,
   Typography,
-  TextField,
   Stack,
   Box,
   ListItem,
+  List,
+  ListItemText,
+  ListItemIcon,
 } from '@mui/material';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -83,7 +82,6 @@ export default function EmailForm() {
             sm: '37.5rem',
             xs: '37.5rem',
           },
-          // alignContent: 'center',
           borderRadius: 6,
         }}
         style={{ backgroundColor: '#383838' }}
@@ -97,7 +95,6 @@ export default function EmailForm() {
           direction='column'
           alignItems='center'
           justifyContent='center'
-          // textAlign='center'
           sx={{
             mt: 4,
           }}
@@ -242,7 +239,7 @@ export default function EmailForm() {
                     xl: 'none',
                     lg: 'none',
                     md: 'none',
-                    sm: 'block',
+                    sm: 'none',
                     xs: 'block',
                   },
                 }}
@@ -253,45 +250,132 @@ export default function EmailForm() {
                 >
                   temel.ulas@googlemail.com
                 </Mailto> */}
-                <Link
-                  style={{
-                    color: 'white',
-                    textDecoration: 'none',
-                    fontSize: 16,
-                  }}
-                  key='Email'
-                  component='a'
-                  href='temel.ulas@googlemail.com'
-                >
-                  temel.ulas@googlemail.com
-                </Link>
-                <Link
-                  style={{
-                    color: 'white',
-                    textDecoration: 'none',
-                    fontSize: 16,
-                  }}
-                  href='#'
-                >
-                  github.com/ulas312
-                </Link>
-                <Link
-                  style={{
-                    color: 'white',
-                    textDecoration: 'none',
-                    fontSize: 16,
-                  }}
-                  href='#'
-                >
-                  in/ulastemel
-                </Link>
+                <Box sx={{ flexGrow: 1, maxWidth: 752 }}>
+                  <Grid container spacing={2}>
+                    <Grid item xs={12} md={6}>
+                      <List
+                        sx={{
+                          pt: 0,
+                        }}
+                      >
+                        <ListItem
+                          sx={{
+                            p: 0,
+                            pl: 2,
+                          }}
+                        >
+                          <ListItemIcon>
+                            <Typography
+                              sx={{
+                                color: 'white',
+                                textDecoration: 'none',
+                                fontSize: 20,
+                              }}
+                            >
+                              Email:
+                            </Typography>
+                          </ListItemIcon>
+                          <ListItemText>
+                            <Link
+                              style={{
+                                color: 'white',
+                                textDecoration: 'none',
+                                fontSize: 20,
+                              }}
+                              key='Email'
+                              component='a'
+                              href='temel.ulas@googlemail.com'
+                            >
+                              temel.ulas@googlemail.com
+                            </Link>
+                          </ListItemText>
+                        </ListItem>
+                      </List>
+                    </Grid>
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <List
+                      sx={{
+                        pt: 0,
+                      }}
+                    >
+                      <ListItem
+                        sx={{
+                          pt: 0,
+                          pb: 0,
+                          pl: 2,
+                        }}
+                      >
+                        <ListItemIcon>
+                          <Typography
+                            sx={{
+                              color: 'white',
+                              textDecoration: 'none',
+                              fontSize: 20,
+                            }}
+                          >
+                            GitHub:
+                          </Typography>
+                        </ListItemIcon>
+                        <ListItemText>
+                          <Link
+                            style={{
+                              color: 'white',
+                              textDecoration: 'none',
+                              fontSize: 20,
+                            }}
+                            component='a'
+                            href='https://github.com/ulas312'
+                          >
+                            github.com/ulas312
+                          </Link>
+                        </ListItemText>
+                      </ListItem>
+                    </List>
+                  </Grid>
 
-                {/* <Typography>temel.ulas@googlemail.com</Typography> */}
-                {/* <Typography>github.com/ulas312</Typography>
-                <Typography>/in/ulastemel</Typography> */}
+                  <Grid item xs={12} md={6}>
+                    <List
+                      sx={{
+                        pt: 0,
+                      }}
+                    >
+                      <ListItem
+                        sx={{
+                          p: 0,
+                          pl: 2,
+                        }}
+                      >
+                        <ListItemIcon>
+                          <Typography
+                            sx={{
+                              color: 'white',
+                              textDecoration: 'none',
+                              fontSize: 20,
+                            }}
+                          >
+                            Linkedin:
+                          </Typography>
+                        </ListItemIcon>
+                        <ListItemText>
+                          <Link
+                            style={{
+                              color: 'white',
+                              textDecoration: 'none',
+                              fontSize: 20,
+                              paddingLeft: 10,
+                            }}
+                            component='a'
+                            href='https://www.linkedin.com/in/ulastemel/'
+                          >
+                            in/ulastemel
+                          </Link>
+                        </ListItemText>
+                      </ListItem>
+                    </List>
+                  </Grid>
+                </Box>
               </Stack>
-
-              {/* </Box> */}
               <ToastContainer
                 style={{
                   fontSize: 30,

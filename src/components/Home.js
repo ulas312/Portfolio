@@ -1,34 +1,35 @@
 import * as React from 'react';
 
-import '../styles/Experience.scss';
-import BGImage from '../assets/experience-background.png';
-import GaLogo from '../assets/ga-logo.png';
-import ZezesLogo from '../assets/zezes-logo.png';
-import PrintLogo from '../assets/312-logo.png';
+import BGImage from '../assets/projects-background.png';
+import fbiIcon from '../assets/fbi-icon.svg';
 
 import {
   Grid,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Button,
-  styled,
   Box,
   Typography,
-  List,
-  Stack,
-  createTheme,
-  ThemeProvider,
-  ListItem,
   AccordionDetails,
   AccordionSummary,
   Accordion,
+  Button,
+  Stack,
+  styled,
 } from '@mui/material';
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 
-export default function Home() {
+const BootstrapTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} arrow classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.arrow}`]: {
+    color: theme.palette.secondary.main,
+  },
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: 'theme.palette.secondary',
+    fontSize: theme.typography.pxToRem(40),
+  },
+}));
+
+export default function Experience() {
   return (
     <div>
       <Grid container component='main'>
@@ -65,7 +66,7 @@ export default function Home() {
             },
           }}
         >
-          experience
+          Projects
         </Typography>
         <Grid
           container
@@ -98,17 +99,17 @@ export default function Home() {
                   component='img'
                   sx={{
                     height: {
-                      xl: 200,
-                      lg: 200,
-                      md: 200,
-                      sm: 200,
+                      xl: 400,
+                      lg: 300,
+                      md: 300,
+                      sm: 300,
                       xs: 120,
                     },
                     width: {
-                      xl: 200,
-                      lg: 200,
-                      md: 200,
-                      sm: 200,
+                      xl: 500,
+                      lg: 400,
+                      md: 400,
+                      sm: 400,
                       xs: 120,
                     },
                     mr: 5,
@@ -120,8 +121,8 @@ export default function Home() {
                       xs: 4,
                     },
                   }}
-                  alt='General Assembly Logo'
-                  src={GaLogo}
+                  alt='Snkr Closet website'
+                  src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Q4M2E2YjVkYTcyNGUzZWY4MGZjNjEwNTVlZjkzOWYzY2YzNzRjZSZjdD1n/FiqP92DzPISSvmE9BR/giphy.gif'
                 />
                 <Typography
                   sx={{
@@ -136,7 +137,7 @@ export default function Home() {
                     },
                   }}
                 >
-                  General Assembly
+                  Snkr Closet
                   <Typography
                     sx={{
                       color: 'text.secondary',
@@ -149,28 +150,36 @@ export default function Home() {
                       },
                     }}
                   >
-                    Software Engineering Immersive.
+                    Solo - 7 day time frame. The project started when our
+                    daughter was born, due to this I only had 5 days left to
+                    finish the project before the deadline.
                   </Typography>
-                  <Typography
-                    sx={{
-                      color: 'text.secondary',
-                      fontSize: {
-                        xl: 28,
-                        lg: 27,
-                        md: 28,
-                        sm: 27,
-                        xs: 19,
-                      },
-                    }}
+                  <Button
+                    sx={{ fontSize: 15, mr: 6, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://snker-closet-frontend.netlify.app/'
                   >
-                    Oct 2022 - Jan 2023 - London, Remote.
-                  </Typography>
+                    View project
+                  </Button>
+                  <Button
+                    sx={{ fontSize: 15, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://github.com/ulas312/ga-project-4-client'
+                  >
+                    Repo
+                  </Button>
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography
                   sx={{
-                    width: '95%',
+                    width: '100%',
                     color: 'text.secondary',
                     fontSize: {
                       xl: 22,
@@ -181,23 +190,73 @@ export default function Home() {
                     },
                   }}
                 >
-                  Throughout the 12-week intensive course and the 450+ hours of
-                  homework, I covered multiple modules on full stack development
-                  and ended up with a project at the end to test and demonstrate
-                  my knowledge.
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Developed full-stack applications using React, MongoDB,
-                    Express, Node.js, Python/Django, and PostgreSQL.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Honed skills in JavaScript, HTML, and CSS.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Successfully delivered solo, pair, and group projects within
-                    deadlines by following agile development practices and
-                    participating in daily stand-ups working remotely over Zoom
-                    and Slack.
-                  </ListItem>
+                  The brief for this project was to build a full-stack
+                  application by making our own backend using Python Django REST
+                  Framework to serve our data from a Postgres database with
+                  authentication and a React frontend to consume the API data. I
+                  chose to create an instagram like app for sneaker collectors.
+                  <Box
+                    component={Stack}
+                    direction='row'
+                    sx={{
+                      display: {
+                        xl: 'block',
+                        lg: 'block',
+                        md: 'block',
+                        sm: 'block',
+                        xs: 'block',
+                      },
+                    }}
+                  >
+                    <BootstrapTooltip title='react'>
+                      <Button>
+                        <i
+                          class='devicon-react-original colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='SASS'>
+                      <Button>
+                        <i
+                          class='devicon-sass-original colored'
+                          style={{ fontSize: '110px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='express'>
+                      <Button>
+                        <i
+                          class='devicon-express-original colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='nodejs'>
+                      <Button>
+                        <i
+                          class='devicon-nodejs-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='mongodb'>
+                      <Button>
+                        <i
+                          class='devicon-mongodb-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='material ui'>
+                      <Button>
+                        <i
+                          class='devicon-materialui-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                  </Box>
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -212,17 +271,17 @@ export default function Home() {
                   component='img'
                   sx={{
                     height: {
-                      xl: 200,
-                      lg: 200,
-                      md: 200,
-                      sm: 200,
+                      xl: 400,
+                      lg: 300,
+                      md: 300,
+                      sm: 300,
                       xs: 120,
                     },
                     width: {
-                      xl: 200,
-                      lg: 200,
-                      md: 200,
-                      sm: 200,
+                      xl: 500,
+                      lg: 400,
+                      md: 400,
+                      sm: 400,
                       xs: 120,
                     },
                     mr: 5,
@@ -234,8 +293,8 @@ export default function Home() {
                       xs: 4,
                     },
                   }}
-                  alt='Zezes Logo'
-                  src={ZezesLogo}
+                  alt='Full stacked website'
+                  src='https://i.postimg.cc/BQ8nb2dL/Screenshot-2023-02-14-at-00-47-08.png'
                 />
                 <Typography
                   sx={{
@@ -250,7 +309,7 @@ export default function Home() {
                     },
                   }}
                 >
-                  Zeze's Mediterranean
+                  Full Stacked
                   <Typography
                     sx={{
                       color: 'text.secondary',
@@ -263,28 +322,34 @@ export default function Home() {
                       },
                     }}
                   >
-                    Co-founder & Head of Marketing.
+                    Team of 3 - completed over 7 days.
                   </Typography>
-                  <Typography
-                    sx={{
-                      color: 'text.secondary',
-                      fontSize: {
-                        xl: 28,
-                        lg: 27,
-                        md: 28,
-                        sm: 27,
-                        xs: 19,
-                      },
-                    }}
+                  <Button
+                    sx={{ fontSize: 15, mr: 6, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://fullstacked-frontend.netlify.app/'
                   >
-                    May 2020 - Oct 2022 - Swanage, Dorset.
-                  </Typography>
+                    View project
+                  </Button>
+                  <Button
+                    sx={{ fontSize: 15, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://github.com/ulas312/ga-project-3-frontend'
+                  >
+                    Repo
+                  </Button>
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography
                   sx={{
-                    width: '95%',
+                    width: '100%',
                     color: 'text.secondary',
                     fontSize: {
                       xl: 22,
@@ -295,21 +360,72 @@ export default function Home() {
                     },
                   }}
                 >
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Designing, building and maintaining the business website
-                    that was mobile and tablet responsive which had consistent
-                    visitor growth over the duration of the business.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Promoting the business through various online and offline
-                    channels which increased overall bookings by 50%.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Ensured effective communication channels were in place by
-                    collaborating with customers and team members to address
-                    inquiries, coordinate schedules, and maintain customer
-                    satisfaction.
-                  </ListItem>
+                  The brief for this project was to build a full-stack
+                  application by using React and making our own backend using
+                  the MERN stack with JWT Tokens, relationships and validation.
+                  For the backend, my tasks were creating the functionality for
+                  login and register with validation with bcrypt, secure routes
+                  using JSON Web Token and string testers with RegExr. For the
+                  Frontend, I was tasked with creating the Home page, activity
+                  log, account page as well as the navbar and I also created a
+                  MUI theme to make customising components easier. I also
+                  created mock templates of the app with Adobe Illustrator to
+                  have images to work off. We chose to create a fitness
+                  workout/exercise directory app.
+                  <Box
+                    component={Stack}
+                    direction='row'
+                    sx={{
+                      display: {
+                        xl: 'block',
+                        lg: 'block',
+                        md: 'block',
+                        sm: 'block',
+                        xs: 'block',
+                      },
+                    }}
+                  >
+                    <BootstrapTooltip title='react'>
+                      <Button>
+                        <i
+                          class='devicon-react-original colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='SASS'>
+                      <Button>
+                        <i
+                          class='devicon-sass-original colored'
+                          style={{ fontSize: '110px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='django'>
+                      <Button>
+                        <i
+                          class='devicon-django-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='postgresql'>
+                      <Button>
+                        <i
+                          class='devicon-postgresql-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='material ui'>
+                      <Button>
+                        <i
+                          class='devicon-materialui-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                  </Box>
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -324,17 +440,17 @@ export default function Home() {
                   component='img'
                   sx={{
                     height: {
-                      xl: 200,
-                      lg: 200,
-                      md: 200,
-                      sm: 200,
+                      xl: 400,
+                      lg: 300,
+                      md: 300,
+                      sm: 300,
                       xs: 120,
                     },
                     width: {
-                      xl: 200,
-                      lg: 200,
-                      md: 200,
-                      sm: 200,
+                      xl: 500,
+                      lg: 400,
+                      md: 400,
+                      sm: 400,
                       xs: 120,
                     },
                     mr: 5,
@@ -346,8 +462,8 @@ export default function Home() {
                       xs: 4,
                     },
                   }}
-                  alt='312 Logo'
-                  src={PrintLogo}
+                  alt='FBI Most Wanted website'
+                  src='https://media.giphy.com/media/CE4VViV6bihyw9slD1/giphy.gif'
                 />
                 <Typography
                   sx={{
@@ -362,7 +478,7 @@ export default function Home() {
                     },
                   }}
                 >
-                  312 Studios
+                  FBI Most Wanted
                   <Typography
                     sx={{
                       color: 'text.secondary',
@@ -375,28 +491,34 @@ export default function Home() {
                       },
                     }}
                   >
-                    Co-founder & Head of Operations.
+                    Team of 2 - completed over 2 days.
                   </Typography>
-                  <Typography
-                    sx={{
-                      color: 'text.secondary',
-                      fontSize: {
-                        xl: 28,
-                        lg: 27,
-                        md: 28,
-                        sm: 27,
-                        xs: 19,
-                      },
-                    }}
+                  <Button
+                    sx={{ fontSize: 15, mr: 6, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://fbi-mostwanted.netlify.app/'
                   >
-                    Jan 2018 - Feb 2020 - Poole, Dorset.
-                  </Typography>
+                    View project
+                  </Button>
+                  <Button
+                    sx={{ fontSize: 15, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://github.com/ulas312/ga-project-2'
+                  >
+                    Repo
+                  </Button>
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography
                   sx={{
-                    width: '95%',
+                    width: '100%',
                     color: 'text.secondary',
                     fontSize: {
                       xl: 22,
@@ -407,22 +529,206 @@ export default function Home() {
                     },
                   }}
                 >
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Dealing directly with clients, creating design briefs from
-                    their needs making sure timeframes and deadlines were
-                    achieved.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Gained hands-on experience in all aspects of graphics and
-                    design from manufacturing, large format printing, vehicle
-                    wrapping and fitting to digital marketing seo and websites.
-                  </ListItem>
-                  <ListItem sx={{ display: 'list-item' }}>
-                    Within a short amount of time I quickly learnt new programs
-                    and how to effectively use them for my needs and become
-                    competent enough to run all the printers and necessary
-                    softwares on Windows computers.
-                  </ListItem>
+                  The brief for this project was to build a full-stack
+                  application by consuming a public API, have several components
+                  and have a router. The tasks I took on were creating the
+                  navbar/footer, home page, the suspect information page that
+                  pulled in the information from the FBI API we used. I also
+                  created mock templates of the app with Adobe Illustrator to
+                  have images to work off.
+                  <Box
+                    component={Stack}
+                    direction='row'
+                    sx={{
+                      display: {
+                        xl: 'block',
+                        lg: 'block',
+                        md: 'block',
+                        sm: 'block',
+                        xs: 'block',
+                      },
+                    }}
+                  >
+                    <BootstrapTooltip title='react'>
+                      <Button>
+                        <i
+                          class='devicon-react-original colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='SASS'>
+                      <Button>
+                        <i
+                          class='devicon-sass-original colored'
+                          style={{ fontSize: '110px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='FBI API'>
+                      <Button>
+                        <img
+                          src={fbiIcon}
+                          alt='api icon'
+                          style={{ width: '80px' }}
+                        />
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='bulma'>
+                      <Button>
+                        <i
+                          class='devicon-bulma-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                  </Box>
+                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls='panel1a-content'
+                id='panel1a-header'
+              >
+                <Box
+                  component='img'
+                  sx={{
+                    height: {
+                      xl: 400,
+                      lg: 300,
+                      md: 300,
+                      sm: 300,
+                      xs: 120,
+                    },
+                    width: {
+                      xl: 500,
+                      lg: 400,
+                      md: 400,
+                      sm: 400,
+                      xs: 120,
+                    },
+                    mr: 5,
+                    mt: {
+                      xl: 0,
+                      lg: 0,
+                      md: 0,
+                      sm: 0,
+                      xs: 4,
+                    },
+                  }}
+                  alt='Space Invaders game'
+                  src='https://media.giphy.com/media/25p2OUAhuKIENRAK3x/giphy.gif'
+                />
+                <Typography
+                  sx={{
+                    mt: 3,
+                    color: 'text.secondary',
+                    fontSize: {
+                      xl: 36,
+                      lg: 35,
+                      md: 36,
+                      sm: 32,
+                      xs: 25,
+                    },
+                  }}
+                >
+                  Space Invaders
+                  <Typography
+                    sx={{
+                      color: 'text.secondary',
+                      fontSize: {
+                        xl: 28,
+                        lg: 27,
+                        md: 28,
+                        sm: 27,
+                        xs: 19,
+                      },
+                    }}
+                  >
+                    Solo - completed over 7 days.
+                  </Typography>
+                  <Button
+                    sx={{ fontSize: 15, mr: 6, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://ulas312.github.io/ga-project-1/'
+                  >
+                    View project
+                  </Button>
+                  <Button
+                    sx={{ fontSize: 15, mt: 4 }}
+                    target='_blank'
+                    color='secondary'
+                    variant='contained'
+                    size='large'
+                    href='https://github.com/ulas312/ga-project-1'
+                  >
+                    Repo
+                  </Button>
+                </Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography
+                  sx={{
+                    width: '100%',
+                    color: 'text.secondary',
+                    fontSize: {
+                      xl: 22,
+                      lg: 20,
+                      md: 20,
+                      sm: 20,
+                      xs: 16,
+                    },
+                  }}
+                >
+                  The brief for this project was to build an in browser game
+                  which included separate files for HTML / CSS / JavaScript and
+                  to use JavaScript to manipulate the DOM. I chose to rebuild a
+                  grid-based version of my favourite arcade classic game, Space
+                  Invaders.
+                  <Box
+                    component={Stack}
+                    direction='row'
+                    sx={{
+                      display: {
+                        xl: 'block',
+                        lg: 'block',
+                        md: 'block',
+                        sm: 'block',
+                        xs: 'block',
+                      },
+                    }}
+                  >
+                    <BootstrapTooltip title='HTML'>
+                      <Button>
+                        <i
+                          class='devicon-html5-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='CSS'>
+                      <Button>
+                        <i
+                          class='devicon-css3-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                    <BootstrapTooltip title='JavaScript'>
+                      <Button>
+                        <i
+                          class='devicon-javascript-plain colored'
+                          style={{ fontSize: '80px' }}
+                        ></i>
+                      </Button>
+                    </BootstrapTooltip>
+                  </Box>
                 </Typography>
               </AccordionDetails>
             </Accordion>

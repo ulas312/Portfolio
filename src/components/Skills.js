@@ -102,7 +102,7 @@ function Skills() {
             Skills
           </Typography>
           <Typography
-            sx={{ width: '300px' }}
+            sx={{ width: '300px', mb: 1 }}
             className='about-text'
             variant='h6'
             align='center'
@@ -117,17 +117,17 @@ function Skills() {
           sx={{
             position: 'absolute',
             height: '70vh',
-            top: '22vh',
+            top: '23vh',
           }}
         >
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <Typography
                 sx={{
-                  mt: 1,
+                  mt: 4,
                   mb: 2,
                   fontSize: {
-                    xl: '4rem',
+                    xl: '3.5rem',
                     lg: '3rem',
                     md: '2rem',
                     sm: '2rem',
@@ -281,10 +281,10 @@ function Skills() {
             <Grid item xs={12} md={6}>
               <Typography
                 sx={{
-                  mt: 1,
+                  mt: 4,
                   mb: 1,
                   fontSize: {
-                    xl: '4rem',
+                    xl: '3.5rem',
                     lg: '3rem',
                     md: '2rem',
                     sm: '2rem',
@@ -448,7 +448,7 @@ function Skills() {
                   mt: 1,
                   mb: 1,
                   fontSize: {
-                    xl: '4rem',
+                    xl: '3.5rem',
                     lg: '3rem',
                     md: '2rem',
                     sm: '2rem',
@@ -603,7 +603,7 @@ function Skills() {
                   mt: 1,
                   mb: 2,
                   fontSize: {
-                    xl: '4rem',
+                    xl: '3.5rem',
                     lg: '3rem',
                     md: '2rem',
                     sm: '2rem',

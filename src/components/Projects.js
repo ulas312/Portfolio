@@ -35,9 +35,6 @@ const theme = createTheme();
 
 theme.typography.h3 = {
   fontSize: '30px',
-  // '@media (min-width:600px)': {
-  //   fontSize: '32px',
-  // },
   [theme.breakpoints.up('md')]: {
     fontSize: '35px',
   },
@@ -45,9 +42,6 @@ theme.typography.h3 = {
 
 theme.typography.p = {
   fontSize: '18px',
-  // '@media (min-width:600px)': {
-  //   fontSize: '20px',
-  // },
   [theme.breakpoints.up('md')]: {
     fontSize: '23px',
   },
@@ -79,12 +73,6 @@ export default class Projects extends Component {
       <div>
         <Grid container component='main'>
           <img className='hero-image' src={BGImage} alt='background pattern' />
-          {/* <div
-            style={{
-              position: 'absolute',
-              left: '5%',
-            }}
-          > */}
           <Typography
             className='about-text'
             variant='h1'
@@ -131,14 +119,6 @@ export default class Projects extends Component {
                 sm: '2vh',
                 xs: '2vh',
               },
-
-              // height: {
-              //   xl: '70vh',
-              //   lg: '70vh',
-              //   md: '60vh',
-              //   sm: '16vh',
-              //   xs: '15vh',
-              // },
               top: {
                 xl: '19vh',
                 lg: '18vh',
@@ -147,7 +127,6 @@ export default class Projects extends Component {
                 xs: '15vh',
               },
               pt: 1,
-              // pl: 5,
             }}
           >
             <Slider {...settings}>
@@ -158,7 +137,6 @@ export default class Projects extends Component {
                       <Grid item xs={6} md={6}>
                         <CardMedia
                           sx={{
-                            // display: 'flex',
                             justifyContent: 'center',
                             mx: 3,
                             my: 2,
@@ -348,7 +326,6 @@ export default class Projects extends Component {
                       <Grid item xs={6} md={6}>
                         <CardMedia
                           sx={{
-                            // display: 'flex',
                             justifyContent: 'center',
                             mx: 3,
                             my: 2,
@@ -700,8 +677,6 @@ export default class Projects extends Component {
                             justifyContent: 'center',
                             mx: 3,
                             my: 2,
-                            // maxHeight: { xs: 233, md: 167 },
-                            // maxWidth: { xs: 350, md: 250 },
                           }}
                         >
                           <Image
@@ -810,7 +785,6 @@ export default class Projects extends Component {
               </div>
             </Slider>
           </Box>
-          {/* </div> */}
         </Grid>
       </div>
     );

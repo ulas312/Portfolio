@@ -32,18 +32,9 @@ function HeroSection() {
           },
         }}
       >
-        <Grid
-          container
-          spacing={2}
-          alignItems='center'
-          // justifyContent='center'
-          // marginRight={2}
-        >
+        <Grid container spacing={2} alignItems='center'>
           <Grid
             item
-            // xs={12}
-            // sm={6}
-            // md={1}
             sx={{
               pr: {
                 xl: 7,
@@ -52,13 +43,7 @@ function HeroSection() {
                 sm: 7,
                 sx: 7,
               },
-              marginLeft: {
-                // xl: '1rem',
-                // lg: '1rem',
-                // md: '0rem',
-                // sm: '0rem',
-                // sx: '-10rem',
-              },
+              marginLeft: {},
               lineHeight: 1,
               display: 'flex',
               flexDirection: 'column',
@@ -98,7 +83,6 @@ function HeroSection() {
                   sm: '15rem',
                   xs: '10.5rem',
                 },
-
                 textAlign: 'left',
               }}
             >
@@ -119,7 +103,7 @@ function HeroSection() {
                 },
               }}
             >
-              Im Ulas Temel
+              I'm Ulas Temel
             </Typography>
             {/* <TypeAnimation
               className='hero-animation'
