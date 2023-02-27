@@ -8,24 +8,13 @@ import PrintLogo from '../assets/312-logo.png';
 
 import {
   Grid,
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  Button,
-  styled,
   Box,
   Typography,
-  List,
-  Stack,
-  createTheme,
-  ThemeProvider,
   ListItem,
   AccordionDetails,
   AccordionSummary,
   Accordion,
 } from '@mui/material';
-import Tooltip, { tooltipClasses } from '@mui/material/Tooltip';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function Experience() {
