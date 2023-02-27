@@ -52,9 +52,9 @@ export default function Projects() {
             left: {
               xl: '44vw',
               lg: '43vw',
-              md: '37vw',
-              sm: '37vw',
-              xs: '33vw',
+              md: '30vh',
+              sm: '27vh',
+              xs: '17vh',
             },
             justify: 'center',
             fontSize: {

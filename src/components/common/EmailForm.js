@@ -217,6 +217,7 @@ export default function EmailForm() {
                   // alignItems: 'center',
                   fontSize: 22,
                   backgroundColor: '#EDE3DF',
+                  color: 'black',
                   height: 50,
                   border: '1px solid black',
                   borderRadius: '4px',
