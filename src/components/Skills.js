@@ -147,7 +147,7 @@ function Skills() {
                     alt='HTML icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -167,7 +167,7 @@ function Skills() {
                     alt='CSS icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -187,7 +187,7 @@ function Skills() {
                     alt='SASS icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -206,7 +206,7 @@ function Skills() {
                     alt='JavaScript icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -225,7 +225,7 @@ function Skills() {
                     alt='React icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -244,7 +244,7 @@ function Skills() {
                     alt='Material UI icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -263,7 +263,7 @@ function Skills() {
                     alt='Bulma icon'
                     sx={{
                       width: {
-                        xl: '5rem',
+                        xl: '4.6rem',
                         lg: '3.3rem',
                         md: '2.6rem',
                         sm: '3.9rem',
@@ -304,7 +304,7 @@ function Skills() {
                     alt='NodeJS icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -349,7 +349,7 @@ function Skills() {
                     alt='express icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -368,7 +368,7 @@ function Skills() {
                     alt='python icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -387,7 +387,7 @@ function Skills() {
                     alt='django icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -406,7 +406,7 @@ function Skills() {
                     alt='sql icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -425,7 +425,7 @@ function Skills() {
                     alt='postgresql icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -468,7 +468,7 @@ function Skills() {
                     alt='git icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -487,7 +487,7 @@ function Skills() {
                     alt='GitHub icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -506,7 +506,7 @@ function Skills() {
                     alt='API icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -525,7 +525,7 @@ function Skills() {
                     alt='restful icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -544,7 +544,7 @@ function Skills() {
                     alt='vscode icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -563,7 +563,7 @@ function Skills() {
                     alt='shopify icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -582,7 +582,7 @@ function Skills() {
                     alt='wordpress icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -649,7 +649,7 @@ function Skills() {
                     alt='illustrator icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -668,7 +668,7 @@ function Skills() {
                     alt='photoshop icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -687,7 +687,7 @@ function Skills() {
                     alt='xd icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -706,7 +706,7 @@ function Skills() {
                     alt='canva icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -725,7 +725,7 @@ function Skills() {
                     alt='trello icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
@@ -744,7 +744,7 @@ function Skills() {
                     alt='Google icon'
                     sx={{
                       width: {
-                        xl: '6.2rem',
+                        xl: '5.2rem',
                         lg: '4rem',
                         md: '3rem',
                         sm: '4.5rem',
