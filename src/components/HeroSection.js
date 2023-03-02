@@ -58,7 +58,7 @@ function HeroSection() {
                 lineHeight: 1,
                 maxWidth: '25vw',
                 fontSize: {
-                  xl: '18rem',
+                  xl: '17rem',
                   lg: '12rem',
                   md: '20rem',
                   sm: '15rem',
@@ -77,7 +77,7 @@ function HeroSection() {
                 lineHeight: 1,
                 maxWidth: '25vw',
                 fontSize: {
-                  xl: '18rem',
+                  xl: '17rem',
                   lg: '12rem',
                   md: '20rem',
                   sm: '15rem',
